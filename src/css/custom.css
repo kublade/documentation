@@ -1,0 +1,46 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #ff2b1c;
+  --ifm-color-primary-dark: #e62619;
+  --ifm-color-primary-darker: #cc2116;
+  --ifm-color-primary-darkest: #b31c13;
+  --ifm-color-primary-light: #ff4538;
+  --ifm-color-primary-lighter: #ff5e53;
+  --ifm-color-primary-lightest: #ff7a71;
+  --ifm-code-font-size: 95%;
+  --ifm-font-family-base: 'Nunito', sans-serif;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #ff6a61;
+  --ifm-color-primary-dark: #ff574c;
+  --ifm-color-primary-darker: #ff3c31;
+  --ifm-color-primary-darkest: #ff2b1c;
+  --ifm-color-primary-light: #ff8179;
+  --ifm-color-primary-lighter: #ff9b94;
+  --ifm-color-primary-lightest: #ffb7b1;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.hero {
+  background: linear-gradient(135deg, #ff2b1c, #b21911);
+  padding: 7.5rem 0 !important;
+}
+
+.hero__subtitle {
+  margin-bottom: 3rem;
+}
+
+.featureIcon {
+  display: inline-block;
+  font-size: 2rem;
+  color: var(--ifm-color-primary);
+  margin-bottom: 1.5rem;
+}
