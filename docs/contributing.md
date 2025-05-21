@@ -66,7 +66,7 @@ We follow [Conventional Commits](https://www.conventionalcommits.org/) specifica
 
 ## Community Support
 
-- Join discussions in our community channels (e.g., Slack, Discord, mailing list).
+- Join discussions in our community channels.
 - Help others by answering questions and reviewing PRs.
 - Respect differing viewpoints and foster a welcoming environment.
 
