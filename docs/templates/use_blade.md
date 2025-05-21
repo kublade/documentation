@@ -28,6 +28,8 @@ Use this to access secret variables. These will be automatically converted to Ku
 ```
 Access dynamically assigned port numbers for your services.
 
+For detailed information about port claims and port management, see [Port reservations](./use_ports.md).
+
 ### Deployment Status
 ```yaml
 {{ $paused ? 'true' : 'false' }}
