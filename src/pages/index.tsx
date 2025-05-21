@@ -31,7 +31,7 @@ function HomepageHeader() {
                   <i className="bi bi-cloud-check"></i> Compatible with any modern cloud provider
                 </li>
                 <li>
-                  <i className="bi bi-code-slash"></i> Free and open source (AGPL-3.0)
+                  <i className="bi bi-code-slash"></i> Free and open source (Apache-2.0)
                 </li>
               </ul>
               <div className={styles.buttons}>
