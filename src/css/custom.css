@@ -15,6 +15,8 @@
   --ifm-color-primary-lightest: #ff7a71;
   --ifm-code-font-size: 95%;
   --ifm-font-family-base: 'Nunito', sans-serif;
+  --ifm-menu-color: #ffffff;
+  --ifm-menu-color-active: #ffffff;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
@@ -27,6 +29,18 @@
   --ifm-color-primary-lighter: #ff9b94;
   --ifm-color-primary-lightest: #ffb7b1;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.menu {
+  background: linear-gradient(135deg, #ff2b1c, #b21911);
+}
+
+.menu__caret:before {
+  background: url('/img/chevron.svg') no-repeat center center;
+}
+
+.navbar-sidebar__back {
+  color: #ffffff;
 }
 
 .hero {
