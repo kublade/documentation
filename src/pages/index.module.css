@@ -20,3 +20,9 @@
   align-items: center;
   justify-content: start;
 }
+
+@media (max-width: 996px) {
+  .buttons {
+    justify-content: center;
+  }
+}

@@ -14,32 +14,37 @@ function HomepageHeader() {
     <>
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
-          <Heading as="h1" className="hero__title">
-            <img src="/img/logo-full.svg" alt={siteConfig.title} className="hero__logo" />
-          </Heading>
-          <p className="hero__subtitle">The simple templating engine for your Kubernetes manifests</p>
-          <ul className="hero__list">
-            <li>
-              <i className="bi bi-people"></i> Self-service for your team or customers
-            </li>
-            <li>
-              <i className="bi bi-easel"></i> Easy to use for non-technical users
-            </li>
-            <li>
-              <i className="bi bi-cloud-check"></i> Compatible with any modern cloud provider
-            </li>
-            <li>
-              <i className="bi bi-code-slash"></i> Free and open source (AGPL-3.0)
-            </li>
-          </ul>
-          <div className={styles.buttons}>
-            <Link
-              className="button button--secondary button--lg"
-              to="/docs/intro">
-              Get Started - 5min ⏱️
-            </Link>
+          <div className="row">
+            <div className="col col--6">
+              <Heading as="h1" className="hero__title">
+                <img src="/img/logo-full.svg" alt={siteConfig.title} className="hero__logo" />
+              </Heading>
+              <p className="hero__subtitle">The simple templating engine for your Kubernetes manifests</p>
+              <ul className="hero__list">
+                <li>
+                  <i className="bi bi-people"></i> Self-service for your team or customers
+                </li>
+                <li>
+                  <i className="bi bi-easel"></i> Easy to use for non-technical users
+                </li>
+                <li>
+                  <i className="bi bi-cloud-check"></i> Compatible with any modern cloud provider
+                </li>
+                <li>
+                  <i className="bi bi-code-slash"></i> Free and open source (AGPL-3.0)
+                </li>
+              </ul>
+              <div className={styles.buttons}>
+                <Link
+                  className="button button--secondary button--lg"
+                  to="/docs/intro">
+                  Get Started - 5min ⏱️
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
+        <img src="/img/screenshot.png" alt="Screenshot" className="hero__screenshot" />
       </header>
     </>
   );

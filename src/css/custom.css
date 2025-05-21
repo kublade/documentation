@@ -45,7 +45,9 @@
 
 .hero {
   background: linear-gradient(135deg, #ff2b1c, #b21911);
+  overflow: hidden;
   padding: 7.5rem 0 !important;
+  position: relative;
 }
 
 .hero__subtitle {
@@ -90,4 +92,33 @@
 .hero__logo {
   max-height: 3.5rem;
   max-width: 100%;
+}
+
+.hero__screenshot {
+  border-top-left-radius: 0.5rem;
+  box-shadow: var(--ifm-navbar-shadow);
+  position: absolute;
+  left: 60%;
+  bottom: 0;
+  height: 90%;
+}
+
+@media (max-width: 996px) {
+  .hero {
+    flex-direction: column;
+    padding: 2rem 1rem 2.5rem !important;
+    text-align: center;
+  }
+
+  .hero__screenshot {
+    display: none;
+  }
+
+  .hero__list li {
+    justify-content: center;
+  }
+}
+
+.row.justify-content-center {
+  justify-content: center;
 }
