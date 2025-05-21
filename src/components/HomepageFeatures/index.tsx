@@ -38,6 +38,15 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
+    icon: 'bi bi-plug',
+    title: 'REST API',
+    description: (
+      <>
+        Utilize a modern REST API to keep control of your deployments programmatically. Kublade provides a simple interface that allows you to manage your Kubernetes resources. This is useful for integrating with other tools and systems, or for automating your deployments.
+      </>
+    ),
+  },
+  {
     icon: 'bi bi-shield-lock',
     title: 'Granular Permissions',
     description: (
