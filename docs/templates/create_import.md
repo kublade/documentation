@@ -3,3 +3,174 @@ sidebar_position: 2
 ---
 
 # Import from Helm chart
+
+This guide explains how to create a template by importing a Helm chart from a repository. The system supports both traditional Helm repositories and OCI-based repositories.
+
+## Required Parameters
+
+To import a Helm chart, you need to provide the following parameters:
+
+- `repoUrl`: The URL of the Helm repository
+  - For traditional repositories: `https://charts.example.com`
+  - For OCI repositories: `oci://registry.example.com/charts`
+- `chartName`: The name of the chart to import
+- `repoName`: (Optional) A name for the repository (defaults to 'helm-repo')
+- `namespace`: (Optional) The target namespace (defaults to 'default')
+
+## Import Process
+
+When importing a Helm chart, the system will:
+
+1. Connect to the specified repository
+2. Download the chart
+3. Extract the values.yaml file
+4. Generate the necessary Kubernetes manifests:
+   - `helmrepository.yaml`: Defines the Helm repository
+   - `helmrelease.yaml`: Defines the Helm release
+   - `kustomization.yaml`: Ties everything together
+
+## Example: Importing from a Traditional Repository
+
+```yaml
+# Template configuration
+repoUrl: https://charts.example.com
+chartName: my-application
+repoName: my-repo
+namespace: my-namespace
+```
+
+This will generate:
+
+### helmrepository.yaml
+```yaml
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: HelmRepository
+metadata:
+  name: my-repo
+spec:
+  url: https://charts.example.com
+  interval: 10m
+```
+
+### helmrelease.yaml
+```yaml
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: my-application
+spec:
+  interval: 5m
+  releaseName: my-application
+  chart:
+    spec:
+      chart: my-application
+      sourceRef:
+        kind: HelmRepository
+        name: my-repo
+        namespace: my-namespace
+      interval: 1m
+  values:
+    # Values from the chart's values.yaml
+    # These will be available as $data in your template
+```
+
+### kustomization.yaml
+```yaml
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: my-namespace
+resources:
+  - helmrepository.yaml
+  - helmrelease.yaml
+```
+
+## Example: Importing from an OCI Repository
+
+```yaml
+# Template configuration
+repoUrl: oci://registry.example.com/charts
+chartName: my-application
+repoName: my-oci-repo
+namespace: my-namespace
+```
+
+This will generate similar manifests, but with OCI-specific configuration:
+
+### helmrepository.yaml
+```yaml
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: HelmRepository
+metadata:
+  name: my-oci-repo
+spec:
+  type: oci
+  url: oci://registry.example.com/charts
+  interval: 10m
+```
+
+## Using Imported Values
+
+The values from the Helm chart's `values.yaml` will be available in your template through the `$data` variable. You can use these values to customize your template using [Blade templating](use_blade.md) and [port reservations](use_ports.md).
+
+### Basic Value Usage
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ $data['name'] }}
+spec:
+  replicas: {{ $data['replicaCount'] }}
+  template:
+    spec:
+      containers:
+      - name: {{ $data['container']['name'] }}
+        image: {{ $data['image']['repository'] }}:{{ $data['image']['tag'] }}
+```
+
+### Combining with Port Claims
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ $data['name'] }}-service
+spec:
+  ports:
+  - name: http
+    port: {{ $portClaims['web'] }}
+    targetPort: {{ $data['service']['port'] }}
+  - name: metrics
+    port: {{ $portClaims['metrics'] }}
+    targetPort: {{ $data['service']['metricsPort'] }}
+```
+
+### Using Blade Control Structures
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ $data['name'] }}
+spec:
+  template:
+    spec:
+      containers:
+      - name: {{ $data['container']['name'] }}
+        @if($data['resources']['enabled'])
+        resources:
+          limits:
+            cpu: {{ $data['resources']['cpu'] }}
+            memory: {{ $data['resources']['memory'] }}
+        @endif
+```
+
+For more information about:
+- Using Blade templating features, see the [Blade templating guide](use_blade.md)
+- Managing port reservations, see the [port reservations guide](use_ports.md)
+
+## Best Practices
+
+1. Always review the chart's values.yaml before importing
+2. Use meaningful repository and chart names
+3. Consider namespace isolation for different applications
+4. Document any custom values you override
+5. Test the imported chart in a staging environment first
+6. Keep track of chart versions for updates
