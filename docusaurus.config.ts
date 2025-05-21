@@ -50,7 +50,7 @@ const config: Config = {
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Kublade Logo',
         src: 'img/logo.svg',
       },
       items: [
