@@ -122,6 +122,38 @@ const config: Config = {
       type: 'text/css',
     },
   ],
+
+  plugins: [
+    [
+      "docusaurus-plugin-remote-content",
+      {
+          name: "documents",
+          sourceBaseUrl: "https://documents.kublade.org/",
+          outDir: "docs/project",
+          documents: ["CHANGELOG.md", "DEPENDENCIES-latest.md"],
+          modifyContent: (filename, content) => {
+            switch (filename) {
+              case "CHANGELOG.md":
+                return {
+                  content: `---
+sidebar_position: 2
+---
+
+${content}`
+                }
+              case "DEPENDENCIES-latest.md":
+                return {
+                  content: `---
+sidebar_position: 4
+---
+
+${content}`
+                }
+            }
+          },
+      },
+    ],
+  ],
 };
 
 export default config;
