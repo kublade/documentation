@@ -20,6 +20,15 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
+    icon: 'bi bi-input-cursor',
+    title: 'Advanced Autocompletion',
+    description: (
+      <>
+        Break free from the constraints of traditional editors with advanced autocompletion. Kublade provides intelligent suggestions and context-aware completions, helping you to write manifests faster and more accurately.
+      </>
+    ),
+  },
+  {
     icon: 'bi bi-git',
     title: 'GitOps Integration',
     description: (
