@@ -46,8 +46,9 @@
 .hero {
   background: linear-gradient(135deg, #c62b1c, #801a10);
   overflow: hidden;
-  padding: 7.5rem 0 !important;
+  padding: 11.25rem 0 7.5rem !important;
   position: relative;
+  margin-top: -60px;
 }
 
 .hero::after {
@@ -119,13 +120,13 @@
   position: absolute;
   left: 60%;
   bottom: 0;
-  height: 90%;
+  height: 80%;
 }
 
 @media (max-width: 996px) {
   .hero {
     flex-direction: column;
-    padding: 2rem 1rem 2.5rem !important;
+    padding: 11.25rem 0 7.5rem !important;
     text-align: center;
   }
 
@@ -140,4 +141,18 @@
 
 .row.justify-content-center {
   justify-content: center;
+}
+
+#__docusaurus:has(> .main-wrapper > .hero) {
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+
+    * {
+      color: #ffffff;
+    }
+  }
 }
