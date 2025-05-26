@@ -6,13 +6,13 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #ff2b1c;
-  --ifm-color-primary-dark: #e62619;
-  --ifm-color-primary-darker: #cc2116;
-  --ifm-color-primary-darkest: #b31c13;
-  --ifm-color-primary-light: #ff4538;
-  --ifm-color-primary-lighter: #ff5e53;
-  --ifm-color-primary-lightest: #ff7a71;
+  --ifm-color-primary: #c62b1c;
+  --ifm-color-primary-dark: #b12617;
+  --ifm-color-primary-darker: #9c2114;
+  --ifm-color-primary-darkest: #801a10;
+  --ifm-color-primary-light: #d44e41;
+  --ifm-color-primary-lighter: #e07870;
+  --ifm-color-primary-lightest: #ed9f98;
   --ifm-code-font-size: 95%;
   --ifm-font-family-base: 'Nunito', sans-serif;
   --ifm-menu-color: #ffffff;
@@ -21,18 +21,18 @@
 }
 
 [data-theme='dark'] {
-  --ifm-color-primary: #ff6a61;
-  --ifm-color-primary-dark: #ff574c;
-  --ifm-color-primary-darker: #ff3c31;
-  --ifm-color-primary-darkest: #ff2b1c;
-  --ifm-color-primary-light: #ff8179;
-  --ifm-color-primary-lighter: #ff9b94;
-  --ifm-color-primary-lightest: #ffb7b1;
+  --ifm-color-primary: #c62b1c;
+  --ifm-color-primary-dark: #b12617;
+  --ifm-color-primary-darker: #9c2114;
+  --ifm-color-primary-darkest: #801a10;
+  --ifm-color-primary-light: #d44e41;
+  --ifm-color-primary-lighter: #e07870;
+  --ifm-color-primary-lightest: #ed9f98;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
 .menu {
-  background: linear-gradient(135deg, #ff2b1c, #b21911);
+  background: linear-gradient(135deg, #c62b1c, #801a10);
 }
 
 .menu__caret:before {
@@ -44,7 +44,7 @@
 }
 
 .hero {
-  background: linear-gradient(135deg, #ff2b1c, #b21911);
+  background: linear-gradient(135deg, #c62b1c, #801a10);
   overflow: hidden;
   padding: 7.5rem 0 !important;
   position: relative;

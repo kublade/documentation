@@ -59,7 +59,7 @@ const config: Config = {
         // Theme Options for modifying how redoc renders them
         theme: {
           // Change with your site colors
-          primaryColor: '#ff2b1c',
+          primaryColor: '#c62b1c',
         },
       },
     ] satisfies Redocusaurus.PresetEntry,
