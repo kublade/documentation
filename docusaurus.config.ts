@@ -69,21 +69,22 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      logo: {
-        alt: 'Kublade Logo',
-        src: 'img/logo.svg',
-      },
       items: [
+        {
+          href: '/',
+          label: 'Home',
+          position: 'left',
+        },
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
-          position: 'right',
+          position: 'left',
           label: 'Documentation',
         },
         {
           href: '/api/',
           label: 'API',
-          position: 'right',
+          position: 'left',
         },
         {
           href: 'https://github.com/kublade/kublade',
