@@ -115,7 +115,7 @@ function Feature({title, description, icon}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center padding-horiz--md padding-top--md padding-bottom-md">
-        <i className={`${icon} featureIcon`}></i>
+        <i className={`${icon} featureIcon ${styles.icon}`}></i>
         <Heading as="h3">{title}</Heading>
         <p>{description}</p>
       </div>
@@ -123,10 +123,16 @@ function Feature({title, description, icon}: FeatureItem) {
   );
 }
 
-export default function HomepageFeatures(): ReactNode {
+export default function HomepageReasons(): ReactNode {
   return (
     <section className={styles.features}>
       <div className="container">
+        <div className={clsx('row', styles.headline)}>
+          <div className="col col--12 text--center">
+            <h2 className="text--primary text--normal">The ultimate DevOps companion</h2>
+            <p>Discover the features that will help you to deploy your Kubernetes applications faster and more efficiently.</p>
+          </div>
+        </div>
         <div className="row justify-content-center">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />

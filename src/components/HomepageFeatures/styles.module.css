@@ -1,7 +1,33 @@
 .features {
   display: flex;
   align-items: center;
-  padding: 3rem 0;
+  padding: 5rem 0;
   width: 100%;
+  background: #F7FAFF;
+  background: linear-gradient(135deg, #FFFFFF, #FFFFFF, #D6D2F0);
 }
 
+.headline {
+  margin-bottom: 3rem;
+}
+
+.headline h2 {
+  font-size: 2rem;
+}
+
+.headline p {
+  margin-bottom: 0;
+}
+
+.icon {
+  background-color: var(--ifm-color-primary);
+  color: #ffffff;
+  padding: 1rem;
+  border-radius: 0.375rem;
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+}

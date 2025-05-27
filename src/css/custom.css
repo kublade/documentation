@@ -6,33 +6,28 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #c62b1c;
-  --ifm-color-primary-dark: #b12617;
-  --ifm-color-primary-darker: #9c2114;
-  --ifm-color-primary-darkest: #801a10;
-  --ifm-color-primary-light: #d44e41;
-  --ifm-color-primary-lighter: #e07870;
-  --ifm-color-primary-lightest: #ed9f98;
+  --ifm-color-primary: #712cf9;
+  --ifm-color-primary-dark: #6428dd;
+  --ifm-color-primary-darker: #5824c2;
+  --ifm-color-primary-darkest: #4a1fa6;
+  --ifm-color-primary-light: #8651fa;
+  --ifm-color-primary-lighter: #a982fb;
+  --ifm-color-primary-lightest: #cbb4fd;
   --ifm-code-font-size: 95%;
   --ifm-font-family-base: 'Nunito', sans-serif;
-  --ifm-menu-color: #ffffff;
-  --ifm-menu-color-active: #ffffff;
+  --ifm-navbar-height: 5rem;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 [data-theme='dark'] {
-  --ifm-color-primary: #c62b1c;
-  --ifm-color-primary-dark: #b12617;
-  --ifm-color-primary-darker: #9c2114;
-  --ifm-color-primary-darkest: #801a10;
-  --ifm-color-primary-light: #d44e41;
-  --ifm-color-primary-lighter: #e07870;
-  --ifm-color-primary-lightest: #ed9f98;
+  --ifm-color-primary: #712cf9;
+  --ifm-color-primary-dark: #6428dd;
+  --ifm-color-primary-darker: #5824c2;
+  --ifm-color-primary-darkest: #4a1fa6;
+  --ifm-color-primary-light: #8651fa;
+  --ifm-color-primary-lighter: #a982fb;
+  --ifm-color-primary-lightest: #cbb4fd;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-}
-
-.menu {
-  background: linear-gradient(135deg, #c62b1c, #801a10);
 }
 
 .menu__caret:before {
@@ -43,26 +38,57 @@
   color: #ffffff;
 }
 
+.navbar__logo {
+  height: 1.5rem;
+}
+
+.navbar__logo img {
+  height: 1.5rem;
+}
+
+#__docusaurus:has(> .main-wrapper > .hero) .navbar__inner {
+  margin: 0 auto;
+  max-width: var(--ifm-container-width);
+  padding: 0 var(--ifm-spacing-horizontal);
+}
+
+@media (min-width: 1440px) {
+  #__docusaurus:has(> .main-wrapper > .hero) .navbar__inner {
+    max-width: var(--ifm-container-width-xl);
+  }
+}
+
 .hero {
-  background: linear-gradient(135deg, #c62b1c, #801a10);
   overflow: hidden;
   padding: 11.25rem 0 7.5rem !important;
   position: relative;
   margin-top: -60px;
 }
 
+.hero--primary {
+  --ifm-hero-background-color: transparent;
+  --ifm-hero-text-color: #000000;
+}
+
 .hero::after {
+  --bs-body-bg-rgb: 255, 255, 255;
+  --bs-primary-rgb: 13, 110, 253;
+  --bd-accent-rgb: 255, 228, 132;
+  --bd-violet-rgb: 113, 44, 249;
+  --bd-pink-rgb: 214, 51, 132;
+
+  background-image: linear-gradient(180deg, rgba(var(--bs-body-bg-rgb), .01), rgba(var(--bs-body-bg-rgb), 1) 85%), radial-gradient(ellipse at top left, rgba(var(--bs-primary-rgb), .5), transparent 50%), radial-gradient(ellipse at top right, rgba(var(--bd-accent-rgb), .5), transparent 50%), radial-gradient(ellipse at center right, rgba(var(--bd-violet-rgb), .5), transparent 50%), radial-gradient(ellipse at center left, rgba(var(--bd-pink-rgb), .5), transparent 50%);
   content: '';
   position: absolute;
   top: 0;
   left: 0;
-  width: 50%;
+  width: 100%;
   height: 100%;
-  background: url('/img/forest.png') no-repeat left center, linear-gradient(90deg, rgb(255 255 255 / 0%), rgb(255 255 255 / 100%));
-  background-blend-mode: color-dodge;
-  background-size: cover;
-  mix-blend-mode: multiply;
-  z-index: 1;
+  z-index: -1;
+}
+
+.hero i {
+  color: #ffffff;
 }
 
 .hero > div {
@@ -102,7 +128,7 @@
   padding: 0.125rem;
   background-color: var(--ifm-color-primary);
   display: block;
-  border-radius: 50%;
+  border-radius: 0.375rem;
   width: 2.25rem;
   height: 2.25rem;
   align-items: center;
@@ -143,16 +169,29 @@
   justify-content: center;
 }
 
-#__docusaurus:has(> .main-wrapper > .hero) {
-  .navbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: transparent;
+.navbar-sidebar__brand {
+  background: var(--ifm-color-primary);
+}
 
-    * {
-      color: #ffffff;
-    }
+.navbar {
+  background: var(--ifm-color-primary);
+}
+
+@media (min-width: 996px) {
+  .navbar__link {
+    --ifm-navbar-link-color: #ffffff;
   }
+
+  .navbar__link:hover,
+  .navbar__link--active {
+    --ifm-navbar-link-hover-color: #ffffff;
+  }
+}
+
+.clean-btn {
+  color: #ffffff;
+}
+
+.clean-btn:hover {
+  color: var(--ifm-color-primary);
 }

@@ -59,7 +59,7 @@ const config: Config = {
         // Theme Options for modifying how redoc renders them
         theme: {
           // Change with your site colors
-          primaryColor: '#c62b1c',
+          primaryColor: '#712cf9',
         },
       },
     ] satisfies Redocusaurus.PresetEntry,
@@ -67,14 +67,13 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/screenshot.png',
     navbar: {
+      logo: {
+        alt: 'Kublade Logo',
+        src: 'img/logo-full.svg',
+      },
       items: [
-        {
-          href: '/',
-          label: 'Home',
-          position: 'left',
-        },
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
