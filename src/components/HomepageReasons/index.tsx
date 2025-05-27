@@ -17,7 +17,7 @@ const FeatureList: FeatureItem[] = [
     contentPosition: 'left',
     description: (
       <>
-        With Kublade's powerful templating engine, you define a single source of truth for your Kubernetes resources - namespaces, RBAC rules, network policies and more—in reusable templates. This enforces uniform security and compliance standards across all environments automatically, eliminating drift and manual misconfigurations. Every team's deployment inherits the same vetted blueprint, so audits become trivial, onboarding is faster, and you can rest assured that every pod and service adheres to your organization's governance from Day One.
+        With Kublade's powerful templating engine, you define a single source of truth for your Kubernetes resources - namespaces, RBAC rules, network policies and more - in reusable templates. This enforces uniform security and compliance standards across all environments automatically, eliminating drift and manual misconfigurations. Every team's deployment inherits the same vetted blueprint, so audits become trivial, onboarding is faster, and you can rest assured that every pod and service adheres to your organization's governance from Day One.
       </>
     ),
   },
@@ -27,7 +27,7 @@ const FeatureList: FeatureItem[] = [
     contentPosition: 'right',
     description: (
       <>
-        Stop rebuilding YAML by hand for each microservice or feature spike. Kublade templates let you spin up entire application stacks - Ingress, ConfigMaps, Deployments, and Services—in seconds by simply injecting environment-specific parameters. Need a QA cluster for a new feature branch? Hit "apply" on the template with a new namespace name and your environment is live. This lightning-fast workflow accelerates testing, shortens feedback loops, and empowers developers to experiment boldly - without worrying about tedious boilerplate or manual merge conflicts.
+        Stop rebuilding YAML by hand for each microservice or feature spike. Kublade templates let you spin up entire application stacks - Ingress, ConfigMaps, Deployments, and Services - in seconds by simply injecting environment-specific parameters. Need a QA cluster for a new feature branch? Hit "apply" on the template with a new namespace name and your environment is live. This lightning-fast workflow accelerates testing, shortens feedback loops, and empowers developers to experiment boldly - without worrying about tedious boilerplate or manual merge conflicts.
       </>
     ),
   },
