@@ -33,7 +33,7 @@ const FeatureList: FeatureItem[] = [
     title: 'Single-Sign-On (SSO)',
     description: (
       <>
-        Simplify your authentication process with Kublade's Single-Sign-On (SSO) support. Kublade integrates with popular SSO providers like GitHub, GitLab, Google, and Azure AD, allowing you to allow simple and secure access to your resources.
+        Simplify your authentication process with Kublade's Single-Sign-On (SSO) support. Kublade integrates with popular SSO providers like GitHub, GitLab, Google, and Azure AD, allowing you to provide simple and secure access to your resources.
       </>
     ),
   },
