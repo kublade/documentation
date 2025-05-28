@@ -97,12 +97,12 @@ const config: Config = {
       copyright: `Copyright © ${new Date().getFullYear()} IPvX UG (haftungsbeschränkt)`,
       links: [
         {
-          label: 'Imprint',
-          href: 'https://ipvx.io/rechtliches/impressum',
+          label: 'Legal Disclosure',
+          href: '/legal-disclosure',
         },
         {
           label: 'Privacy Policy',
-          href: 'https://ipvx.io/rechtliches/datenschutzbestimmungen',
+          href: '/privacy-policy',
         },
       ],
     },
