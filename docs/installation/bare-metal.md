@@ -54,6 +54,10 @@ php artisan key:generate
 php artisan migrate --force
 ```
 
+```bash
+php artisan db:seed
+```
+
 ### 7. Set Permissions
 
 Ensure the web server user (e.g., `www-data`) can write to `storage` and `bootstrap/cache`:

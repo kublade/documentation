@@ -80,6 +80,10 @@ kubectl exec -it <app-pod-name> -- php artisan key:generate
 kubectl exec -it <app-pod-name> -- php artisan migrate --no-interaction --force
 ```
 
+```bash
+kubectl exec -it <app-pod-name> -- php artisan db:seed
+```
+
 ### 7. Access the Application
 
 Expose the application using a LoadBalancer service or use `kubectl port-forward` for local access.

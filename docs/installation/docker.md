@@ -57,6 +57,7 @@ npm install
 npm run build
 php artisan key:generate
 php artisan migrate --force
+php artisan db:seed
 ```
 
 ### 5. Access the Application
