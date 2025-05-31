@@ -10,6 +10,12 @@ Blade templating allows you to create dynamic Kubernetes manifests by using vari
 
 The following variables are available in your templates:
 
+### Namespace
+```yaml
+{{ $namespace }}
+```
+Use this to inject the auto-generated application namespace into your template.
+
 ### Data Variables
 ```yaml
 {{ $data['your_variable'] }}
