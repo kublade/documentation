@@ -108,63 +108,11 @@ spec:
   interval: 10m
 ```
 
-## Using Imported Values
+## Template Rendering
 
-The values from the Helm chart's `values.yaml` will be available in your template through the `$data` variable. You can use these values to customize your template using [Blade templating](use_blade.md) and [port reservations](use_ports.md).
-
-### Basic Value Usage
-```yaml
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: {{ $data['name'] }}
-spec:
-  replicas: {{ $data['replicaCount'] }}
-  template:
-    spec:
-      containers:
-      - name: {{ $data['container']['name'] }}
-        image: {{ $data['image']['repository'] }}:{{ $data['image']['tag'] }}
-```
-
-### Combining with Port Claims
-```yaml
-apiVersion: v1
-kind: Service
-metadata:
-  name: {{ $data['name'] }}-service
-spec:
-  ports:
-  - name: http
-    port: {{ $portClaims['web'] }}
-    targetPort: {{ $data['service']['port'] }}
-  - name: metrics
-    port: {{ $portClaims['metrics'] }}
-    targetPort: {{ $data['service']['metricsPort'] }}
-```
-
-### Using Blade Control Structures
-```yaml
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: {{ $data['name'] }}
-spec:
-  template:
-    spec:
-      containers:
-      - name: {{ $data['container']['name'] }}
-        @if($data['resources']['enabled'])
-        resources:
-          limits:
-            cpu: {{ $data['resources']['cpu'] }}
-            memory: {{ $data['resources']['memory'] }}
-        @endif
-```
-
-For more information about:
-- Using Blade templating features, see the [Blade templating guide](use_blade.md)
-- Managing port reservations, see the [port reservations guide](use_ports.md)
+For detailed information about templating your Kubernetes manifests, including variable usage, conditional logic, and port management, refer to:
+- [Blade Templating Guide](use_blade.md): Learn how to use the Blade templating engine for dynamic manifest generation
+- [Port Management Guide](use_ports.md): Understand how to manage port claims and reservations
 
 ## Best Practices
 
