@@ -23,7 +23,7 @@ To synchronize a template from a Git repository, you need to provide the followi
 
 ## Repository Structure
 
-Your Git repository should follow this structure:
+Your Git repository should follow this structure. You can find a complete example in our [template repository](https://github.com/kublade/template-repository):
 
 ```
 repository/
