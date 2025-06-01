@@ -116,6 +116,25 @@ const config: Config = {
       copyright: `Copyright © ${new Date().getFullYear()} IPvX UG (haftungsbeschränkt)`,
       links: [
         {
+          title: 'Resources',
+          items: [
+            /*
+            {
+              label: 'Blog',
+              href: '/blog',
+            },
+            */
+            {
+              label: 'Documentation',
+              href: '/docs/intro',
+            },
+            {
+              label: 'API',
+              href: '/api/',
+            },
+          ],
+        },
+        {
           title: 'Community',
           items: [
             {
@@ -128,17 +147,6 @@ const config: Config = {
             },
           ],
         },
-        /*
-        {
-          title: 'Resources',
-          items: [
-            {
-              label: 'Blog',
-              href: '/blog',
-            },
-          ],
-        },
-        */
         {
           title: 'Legal',
           items: [
