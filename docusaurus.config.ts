@@ -42,6 +42,13 @@ const config: Config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+        blog: {
+          blogTitle: 'Kublade Blog',
+          blogDescription: 'The official blog of Kublade',
+          blogSidebarCount: 10,
+          postsPerPage: 10,
+          showReadingTime: true,
+        },
       } satisfies Preset.Options,
     ],
     [
@@ -74,6 +81,13 @@ const config: Config = {
         src: 'img/logo-full.svg',
       },
       items: [
+        /*
+        {
+          href: '/blog',
+          label: 'Blog',
+          position: 'left',
+        },
+        */
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
@@ -90,6 +104,11 @@ const config: Config = {
           label: 'GitHub',
           position: 'right',
         },
+        {
+          href: 'https://matrix.to/#/#kublade:gitter.im',
+          label: 'Gitter',
+          position: 'right',
+        },
       ],
     },
     footer: {
@@ -97,12 +116,41 @@ const config: Config = {
       copyright: `Copyright © ${new Date().getFullYear()} IPvX UG (haftungsbeschränkt)`,
       links: [
         {
-          label: 'Legal Disclosure',
-          href: '/legal-disclosure',
+          title: 'Community',
+          items: [
+            {
+              label: 'GitHub',
+              href: 'https://github.com/kublade/kublade',
+            },
+            {
+              label: 'Gitter',
+              href: 'https://matrix.to/#/#kublade:gitter.im',
+            },
+          ],
         },
+        /*
         {
-          label: 'Privacy Policy',
-          href: '/privacy-policy',
+          title: 'Resources',
+          items: [
+            {
+              label: 'Blog',
+              href: '/blog',
+            },
+          ],
+        },
+        */
+        {
+          title: 'Legal',
+          items: [
+            {
+              label: 'Legal Disclosure',
+              href: '/legal-disclosure',
+            },
+            {
+              label: 'Privacy Policy',
+              href: '/privacy-policy',
+            },
+          ],
         },
       ],
     },
