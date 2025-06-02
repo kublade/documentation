@@ -33,7 +33,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     icon: 'bi bi-robot',
-    title: 'Context-Aware AI Chat (Powered by OpenAI)',
+    title: 'Context-Aware AI Chat',
     contentPosition: 'left',
     description: (
       <>
