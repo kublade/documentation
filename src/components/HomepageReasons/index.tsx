@@ -31,6 +31,16 @@ const FeatureList: FeatureItem[] = [
       </>
     ),
   },
+  {
+    icon: 'bi bi-robot',
+    title: 'Context-Aware AI Chat (Powered by OpenAI)',
+    contentPosition: 'left',
+    description: (
+      <>
+        Leverage the power of AI to streamline your Kubernetes operations. Our context-aware AI chat assistant understands your cluster's state, configuration templates, and deployment history, providing intelligent suggestions and automated solutions. Whether you're troubleshooting deployment issues, seeking best practices for resource optimization, or need help with template modifications, the AI assistant offers real-time guidance tailored to your specific infrastructure context. This intelligent interface reduces cognitive load, accelerates problem resolution, and helps teams maintain consistent operational excellence across all environments.
+      </>
+    ),
+  },
 ];
 
 function Feature({title, description, icon, contentPosition}: FeatureItem) {
