@@ -30,7 +30,7 @@ AI_URL=https://api.openai.com/v1
 AI_ENABLED=true
 AI_MODEL=your-model-name
 AI_API_KEY=your-api-key-here
-AI_URL=http://your-openwebui-instance:8080/v1
+AI_URL=http://your-openwebui-instance:8080/api
 ```
 
 ## API Integration
