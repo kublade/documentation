@@ -33,6 +33,10 @@ AI_API_KEY=your-api-key-here
 AI_URL=http://your-openwebui-instance:8080/api
 ```
 
+## API Integration
+
+The AI integration uses the `/chat/completions` endpoint for generating responses. This standardized endpoint makes it possible to use different AI providers that implement the same API interface, such as Open WebUI.
+
 ## Model Compatibility
 
 The AI integration is designed to work with various language models, but some models provide better compatibility and performance than others. The choice of model can significantly impact the quality and reliability of AI assistance, especially when dealing with complex template structures and code generation.
@@ -63,9 +67,107 @@ When using alternative models, consider the following:
 - Test thoroughly with your specific use cases
 - Be prepared for potential inconsistencies with complex nested structures (e.g., Blade templates within YAML within XML)
 
-## API Integration
+## Tools / Agent Mode
 
-The AI integration uses the `/chat/completions` endpoint for generating responses. This standardized endpoint makes it possible to use different AI providers that implement the same API interface, such as Open WebUI.
+The AI integration includes a powerful agent mode that enables direct interaction with the application through the chat interface. This feature allows the AI assistant to perform actions directly within your Kublade instance, such as creating and managing templates, configuring ports, and defining form fields.
+
+### Tool System Overview
+
+The agent mode uses a structured XML-based tool system, where each tool is defined within `<kbl-tool>` tags. All tools support three basic actions:
+- `create`: Create new resources
+- `update`: Modify existing resources
+- `delete`: Remove resources
+
+### Available Tools
+
+#### Template File Management
+```xml
+<kbl-tool type="template_file" action="create" path="path/to/file">
+  content of the file
+</kbl-tool>
+```
+- Creates, updates, or deletes template files
+- Includes file content for create/update actions
+- Path specifies the location within the template structure
+
+#### Template Folder Management
+```xml
+<kbl-tool type="template_folder" action="create" path="path/to/folder" />
+```
+- Creates or removes template folders
+- Uses self-closing tags as no content is needed
+- Path defines the folder location
+
+#### Port Configuration
+```xml
+<kbl-tool type="template_port" action="create" 
+  group="group" 
+  claim="claim" 
+  preferred_port="preferred_port" 
+  random="true" />
+```
+- Manages port configurations for templates
+- Supports group and claim assignments
+- Allows preferred port specification
+- Includes random port allocation option
+
+#### Form Field Management
+```xml
+<kbl-tool type="template_field" action="create" 
+  field_type="input_text" 
+  label="label" 
+  key="key" 
+  value="value" 
+  required="true" 
+  secret="false" 
+  set_on_create="true" 
+  set_on_update="true" />
+```
+The template field tool supports various field types:
+- Basic inputs: `input_text`, `input_hidden`, `textarea`
+- Numeric inputs: `input_number`, `input_range`
+- Selection inputs: `input_radio`, `input_radio_image`, `input_checkbox`, `select`
+
+Field-specific features:
+- Numeric fields (`input_number`, `input_range`) support:
+  - `min`: Minimum value
+  - `max`: Maximum value
+  - `step`: Increment step
+- Selection fields (`input_radio`, `input_radio_image`, `select`) support options:
+```xml
+<kbl-tool type="template_field" action="create" field_type="select" ...>
+  <kbl-field-option label="label" value="value" default="true" />
+</kbl-tool>
+```
+
+### Using the Agent Mode
+
+The AI assistant can use these tools to:
+1. Create and manage template structures
+2. Configure application ports
+3. Define form fields with appropriate validation
+4. Generate complete template configurations
+
+When interacting with the agent mode, the AI will:
+- Understand your requirements
+- Generate appropriate tool calls
+- Execute actions directly in your Kublade instance
+- Provide feedback on the results
+
+Example interaction:
+```
+User: "Create a new template with a text input for the application name and a port configuration"
+AI: [Generates and executes appropriate tool calls to create the template structure, add the form field, and configure the port]
+```
+
+### Best Practices
+
+When using the agent mode:
+- Be specific about your requirements
+- Review generated configurations before applying
+- Use the chat history to maintain context
+- Leverage the AI's understanding of template structures
+- Consider using the agent mode for complex template setups
 
 ## System Prompts
 
