@@ -33,6 +33,36 @@ AI_API_KEY=your-api-key-here
 AI_URL=http://your-openwebui-instance:8080/api
 ```
 
+## Model Compatibility
+
+The AI integration is designed to work with various language models, but some models provide better compatibility and performance than others. The choice of model can significantly impact the quality and reliability of AI assistance, especially when dealing with complex template structures and code generation.
+
+### Recommended Models
+
+The following models are recommended for optimal performance:
+
+| Model | Strengths | Best For |
+|-------|-----------|-----------|
+| OpenAI GPT-4o | - Best overall compatibility<br>- Excellent XML, Blade, and YAML handling<br>- Strong code generation<br>- Reliable instruction following | - Complex template generation<br>- Code assistance<br>- Context-aware responses |
+| Anthropic Claude 3 (Opus/Sonnet) | - Superior long-context handling<br>- Consistent structured output<br>- Strong instruction adherence<br>- Reliable tool usage | - Long-form content<br>- Complex reasoning<br>- Detailed documentation |
+
+### Alternative Models
+
+The following models can work with the integration but may require additional configuration or have limitations:
+
+| Model | Considerations | Limitations |
+|-------|---------------|-------------|
+| DeepSeek R1 | - Good general performance<br>- Cost-effective | - May need explicit formatting rules<br>- Struggles with complex nesting |
+| Mistral 7B | - Efficient resource usage<br>- Good for basic tasks | - Limited context window<br>- Inconsistent with complex structures |
+| Mixtral | - Strong performance<br>- Good balance of capabilities | - Variable output quality<br>- May need prompt engineering |
+| LLaMA 3 8B+ | - Open source<br>- Customizable | - Requires careful prompting<br>- Inconsistent with nested structures |
+
+When using alternative models, consider the following:
+- Provide explicit examples in the system prompts
+- Use stricter output formatting rules
+- Test thoroughly with your specific use cases
+- Be prepared for potential inconsistencies with complex nested structures (e.g., Blade templates within YAML within XML)
+
 ## API Integration
 
 The AI integration uses the `/chat/completions` endpoint for generating responses. This standardized endpoint makes it possible to use different AI providers that implement the same API interface, such as Open WebUI.
