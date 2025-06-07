@@ -47,8 +47,8 @@ The following models are recommended for optimal performance:
 
 | Model | Strengths | Best For |
 |-------|-----------|-----------|
-| OpenAI GPT-4o | - Best overall compatibility<br>- Excellent XML, Blade, and YAML handling<br>- Strong code generation<br>- Reliable instruction following | - Complex template generation<br>- Code assistance<br>- Context-aware responses |
-| Anthropic Claude 3 (Opus/Sonnet) | - Superior long-context handling<br>- Consistent structured output<br>- Strong instruction adherence<br>- Reliable tool usage | - Long-form content<br>- Complex reasoning<br>- Detailed documentation |
+| OpenAI GPT-4o | - Best overall compatibility<br />- Excellent XML, Blade, and YAML handling<br />- Strong code generation<br />- Reliable instruction following | - Complex template generation<br />- Code assistance<br />- Context-aware responses |
+| Anthropic Claude 3 (Opus/Sonnet) | - Superior long-context handling<br />- Consistent structured output<br />- Strong instruction adherence<br />- Reliable tool usage | - Long-form content<br />- Complex reasoning<br />- Detailed documentation |
 
 ### Alternative Models
 
@@ -56,10 +56,10 @@ The following models can work with the integration but may require additional co
 
 | Model | Considerations | Limitations |
 |-------|---------------|-------------|
-| DeepSeek R1 | - Good general performance<br>- Cost-effective | - May need explicit formatting rules<br>- Struggles with complex nesting |
-| Mistral 7B | - Efficient resource usage<br>- Good for basic tasks | - Limited context window<br>- Inconsistent with complex structures |
-| Mixtral | - Strong performance<br>- Good balance of capabilities | - Variable output quality<br>- May need prompt engineering |
-| LLaMA 3 8B+ | - Open source<br>- Customizable | - Requires careful prompting<br>- Inconsistent with nested structures |
+| DeepSeek R1 | - Good general performance<br />- Cost-effective | - May need explicit formatting rules<br />- Struggles with complex nesting |
+| Mistral 7B | - Efficient resource usage<br />- Good for basic tasks | - Limited context window<br />- Inconsistent with complex structures |
+| Mixtral | - Strong performance<br />- Good balance of capabilities | - Variable output quality<br />- May need prompt engineering |
+| LLaMA 3 8B+ | - Open source<br />- Customizable | - Requires careful prompting<br />- Inconsistent with nested structures |
 
 When using alternative models, consider the following:
 - Provide explicit examples in the system prompts
