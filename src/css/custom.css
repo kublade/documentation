@@ -188,11 +188,18 @@
   }
 }
 
-.clean-btn {
+.navbar .clean-btn,
+.theme-doc-sidebar-container .clean-btn {
+  --ifm-color-emphasis-600: var(--ifm-color-primary);
   color: #ffffff;
 }
 
 .clean-btn:hover {
+  color: var(--ifm-color-primary);
+}
+
+.navbar .navbar-sidebar__back,
+.theme-doc-sidebar-container .navbar-sidebar__back {
   color: var(--ifm-color-primary);
 }
 
