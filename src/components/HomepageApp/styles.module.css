@@ -1,0 +1,21 @@
+.app {
+  background: #F6ECFA;
+  background: linear-gradient(180deg, #FFFFFF, #F6ECFA 50%, #FFFFFF 100%);
+  padding: 5rem 0;
+  position: relative;
+}
+
+.headline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.headline h2 {
+  font-size: 2rem;
+}
+
+.headline p {
+  margin-bottom: 0;
+}

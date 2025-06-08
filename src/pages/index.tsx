@@ -4,6 +4,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import HomepageApp from '@site/src/components/HomepageApp';
 import HomepageReasons from '@site/src/components/HomepageReasons';
 import Heading from '@theme/Heading';
 
@@ -45,7 +46,7 @@ function HomepageHeader() {
             </div>
           </div>
         </div>
-        <img src="/img/screenshot.png" alt="Screenshot" className="hero__screenshot" />
+        <img src="/img/screenshots/dashboard.png" alt="Screenshot" className="hero__screenshot" />
       </header>
     </>
   );
@@ -59,6 +60,7 @@ export default function Home(): ReactNode {
       <HomepageHeader />
       <main>
         <HomepageReasons />
+        <HomepageApp />
         <HomepageFeatures />
       </main>
     </Layout>

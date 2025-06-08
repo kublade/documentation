@@ -74,7 +74,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/screenshot.png',
+    image: 'img/screenshots/dashboard.png',
     navbar: {
       logo: {
         alt: 'Kublade Logo',

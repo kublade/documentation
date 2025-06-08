@@ -20,6 +20,15 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
+    icon: 'bi bi-download',
+    title: 'Automatic Template Import',
+    description: (
+      <>
+        Import templates from a Git repository, Helm repository, or create them directly within the web editor. Kublade will automatically parse the templates and make them available for use in your project.
+      </>
+    ),
+  },
+  {
     icon: 'bi bi-input-cursor',
     title: 'Advanced Autocompletion',
     description: (
@@ -137,7 +146,7 @@ export default function HomepageReasons(): ReactNode {
     <section className={styles.features}>
       <div className="container">
         <div className={clsx('row', styles.headline)}>
-          <div className="col col--12 text--center">
+          <div className="col--8 text--center">
             <h2 className="text--primary text--normal">The ultimate DevOps companion</h2>
             <p>Discover the features that will help you to deploy your Kubernetes applications faster and more efficiently.</p>
           </div>
