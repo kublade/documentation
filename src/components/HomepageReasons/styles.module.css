@@ -46,6 +46,8 @@
   background-blend-mode: color;
   position: relative;
   overflow: hidden;
+  height: 100%;
+  width: 100%;
 }
 
 .iconized::after {

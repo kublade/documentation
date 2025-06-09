@@ -100,6 +100,16 @@ const config: Config = {
           position: 'left',
         },
         {
+          type: 'html',
+          position: 'left',
+          value: '<span class="navbar__separator"></span>',
+        },
+        {
+          label: 'Enterprise Support',
+          href: '/enterprise-support',
+          position: 'left',
+        },
+        {
           href: 'https://github.com/kublade/kublade',
           label: 'GitHub',
           position: 'right',
@@ -131,6 +141,10 @@ const config: Config = {
             {
               label: 'API',
               href: '/api/',
+            },
+            {
+              label: 'Enterprise Support',
+              href: '/enterprise-support',
             },
           ],
         },

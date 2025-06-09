@@ -46,9 +46,11 @@ const FeatureList: FeatureItem[] = [
 function Feature({title, description, icon, contentPosition}: FeatureItem) {
   return (
     <div className={clsx('row', contentPosition === 'right' ? styles.reverse : styles.regular)}>
-      <div className={clsx('col col--5', styles.iconized)}>
-        <div className={styles.iconContainer}></div>
-        <i className={`featureIcon ${icon} ${styles.icon}`}></i>
+      <div className="col col--5">
+        <div className={styles.iconized}>
+          <div className={styles.iconContainer}></div>
+          <i className={`featureIcon ${icon} ${styles.icon}`}></i>
+        </div>
       </div>
       <div className={clsx('col col--7', styles.content)}>
         <div className="padding--lg">
