@@ -14,8 +14,12 @@ The AI integration can be configured using the following environment variables:
 |----------|-------------|---------|
 | `AI_ENABLED` | Enable/disable the AI integration | `false` |
 | `AI_MODEL` | The model to use for AI completions | `o4-mini` |
+| `AI_EMBEDDING_MODEL` | The model to use for text embedding | `text-embedding-3-small` |
 | `AI_API_KEY` | API key for the AI service | - |
-| `AI_URL` | Base URL for the AI API | `https://api.openai.com/v1` |
+| `AI_URL` | Base URL for the AI API | `https://api.openai.com` |
+| `AI_CHAT_COMPLETIONS_ENDPOINT` | Endpoint for conversations with a model | `/v1/chat/completions` |
+| `AI_EMBEDDING_ENDPOINT` | Endpoint for generating text from a vector | `/v1/embeddings` |
+| `AI_REMOTE_EMBEDDING` | Enable/disable remote text vectorization | `true` |
 
 ### Example Configuration
 
@@ -23,14 +27,22 @@ The AI integration can be configured using the following environment variables:
 # OpenAI Configuration
 AI_ENABLED=true
 AI_MODEL=o4-mini
+AI_EMBEDDING_MODEL=text-embedding-3-small
 AI_API_KEY=your-api-key-here
-AI_URL=https://api.openai.com/v1
+AI_URL=https://api.openai.com
+AI_CHAT_COMPLETIONS_ENDPOINT=/v1/chat/completions
+AI_EMBEDDING_ENDPOINT=/v1/embeddings
+AI_REMOTE_EMBEDDING=true
 
 # Open WebUI Configuration
 AI_ENABLED=true
-AI_MODEL=your-model-name
+AI_MODEL=llama3.2
+AI_EMBEDDING_MODEL=llama3.2
 AI_API_KEY=your-api-key-here
-AI_URL=http://your-openwebui-instance:8080/api
+AI_URL=http://your-openwebui-instance:8080
+AI_CHAT_COMPLETIONS_ENDPOINT=/api/chat/completions
+AI_EMBEDDING_ENDPOINT=/ollama/api/embed
+AI_REMOTE_EMBEDDING=true
 ```
 
 ## API Integration
@@ -168,6 +180,89 @@ When using the agent mode:
 - Use the chat history to maintain context
 - Leverage the AI's understanding of template structures
 - Consider using the agent mode for complex template setups
+
+## MCP Support
+
+Kublade supports Model Context Protocol (MCP) servers to extend the AI assistant's capabilities with custom tools and data sources. MCP servers allow you to integrate external services, databases, and custom functionality directly into the AI chat interface.
+
+### MCP Server Configuration
+
+MCP server configurations are stored in the `/mcp` directory as `.blade.yaml` files. These configuration files support Blade templating, allowing for dynamic configuration based on context and environment variables.
+
+#### Configuration Structure
+
+Each MCP server configuration file should be placed in `/mcp/` with a `.blade.yaml` extension. The configuration supports the following template variables:
+
+- `$prompt`: The current user prompt being processed
+- `$context`: The current conversation context and relevant information
+
+#### Example MCP Configuration
+
+```yaml
+# /mcp/custom-tool.blade.yaml
+name: "Custom Tool"
+description: "A custom MCP server for specific functionality"
+endpoint: "http://localhost:8080/mcp"
+authentication:
+  type: "api_key"
+  api_key: "{{ env('MCP_API_KEY') }}"
+triggers:
+  - pattern: "custom action"
+    threshold: 0.8
+parameters:
+  prompt: "{{ $prompt }}"
+  context: "{{ $context }}"
+```
+
+### Triggering MCP Servers
+
+MCP servers are triggered based on semantic similarity between the user prompt and predefined trigger patterns. To generate the necessary embeddings for MCP triggering, use the following command:
+
+```bash
+php artisan kbl:vector:generate "{prompt}" "{action}"
+```
+
+This command generates vector embeddings for the prompt and action, which are then used to determine when an MCP server should be activated.
+
+### MCP Integration Flow
+
+When an MCP server is triggered, the following process occurs:
+
+1. **Embedding Generation**: The system generates embeddings for the current prompt and action
+2. **MCP Selection**: The system identifies which MCP servers should be activated based on similarity thresholds
+3. **Context Injection**: The MCP response is automatically written to the system context
+4. **LLM Processing**: The enhanced context (including MCP data) is sent to the language model
+5. **Response Generation**: The AI generates a response with access to the MCP-provided information
+
+### Context Management
+
+MCP context is automatically managed to ensure optimal performance:
+
+- **Automatic Injection**: MCP responses are seamlessly integrated into the conversation context
+- **Token Management**: If the total context length exceeds the model's maximum token limit, MCP context is prioritized and may be truncated
+- **Context Dispersion**: The system intelligently manages context distribution to maintain conversation quality while staying within token limits
+
+### Best Practices
+
+When implementing MCP servers:
+
+- **Clear Triggers**: Define specific, well-defined trigger patterns for your MCP servers
+- **Efficient Responses**: Keep MCP responses concise and relevant to avoid token waste
+- **Error Handling**: Implement proper error handling in your MCP configurations
+- **Testing**: Use the vector generation command to test trigger patterns before deployment
+- **Documentation**: Document your MCP server's capabilities and expected inputs/outputs
+
+### Example Use Cases
+
+MCP servers can be used for various purposes:
+
+- **Database Queries**: Connect to external databases to provide real-time data
+- **API Integration**: Integrate with third-party services and APIs
+- **Custom Tools**: Implement domain-specific tools and utilities
+- **Data Processing**: Process and analyze data before providing it to the AI
+- **External Systems**: Connect to other applications and services in your infrastructure
+
+By leveraging MCP servers, you can significantly extend the AI assistant's capabilities and provide more relevant, contextual assistance to users.
 
 ## System Prompts
 
