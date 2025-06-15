@@ -1,0 +1,110 @@
+# Kublade
+
+> Effortless Kubernetes deployments powered by Laravel Blade
+
+- [Kublade](/index.md)
+
+## api
+
+Kublade Swagger API documentation
+
+- [Kublade API Documentation (v2.7.1)](/api.md)api: landing page
+
+## blog
+
+
+### authors
+
+- [Authors](/blog/authors.md)authors: landing page
+
+## enterprise-support
+
+Next level cloud solutions built on Kublade, backed by experts
+
+- [Enterprise Support](/enterprise-support.md)enterprise-support: landing page
+
+## legal-disclosure
+
+Legal Disclosure for Kublade
+
+- [Legal Disclosure](/legal-disclosure.md)legal-disclosure: landing page
+
+## privacy-policy
+
+Privacy Policy for Kublade
+
+- [Privacy Policy](/privacy-policy.md)privacy-policy: landing page
+
+## docs
+
+
+### ai-integration
+
+The AI companion integration in Kublade provides intelligent assistance through various AI models. By default, it integrates with OpenAI's API, but it also supports Open WebUI's API as a drop-in replacement for self-hosted models.
+
+- [AI Integration](/docs/ai-integration.md)ai-integration: landing page
+
+### category
+
+- [Clusters](/docs/category/clusters.md)
+- [Installation](/docs/category/installation.md)
+- [Project Information](/docs/category/project-information.md)
+- [Templates](/docs/category/templates.md)
+
+### clusters
+
+- [Create](/docs/clusters/create.md): This guide explains how to add a Kubernetes cluster to Kublade. Note that Kublade does not create Kubernetes clusters - it manages existing clusters. You need to have a running Kubernetes cluster with the necessary access before proceeding.
+- [Monitoring](/docs/clusters/monitor.md): Kublade provides comprehensive monitoring capabilities for your Kubernetes clusters, automatically collecting and aggregating metrics at multiple levels. The monitoring system is designed to provide real-time insights into cluster health, resource usage, and performance.
+
+### installation
+
+- [Bare Metal](/docs/installation/bare-metal.md): This guide describes how to install and run Kublade on a bare metal server (without Docker).
+- [Default Login](/docs/installation/default-login.md): After completing the installation, you can access the Kublade platform through your web browser. Below you'll find the necessary login credentials and instructions.
+- [Docker](/docs/installation/docker.md): This guide describes how to install and run Kublade using Docker and docker-compose (Laravel Sail).
+- [Kubernetes](/docs/installation/kubernetes.md): This guide describes how to install and run Kublade on a Kubernetes cluster using Helm charts and Docker images.
+
+### intro
+
+Welcome to the Kublade documentation!
+
+- [Introduction](/docs/intro.md)intro: landing page
+
+### prerequisites
+
+Before you can install and use Kublade, please ensure your environment meets the following requirements:
+
+- [Prerequisites](/docs/prerequisites.md)prerequisites: landing page
+
+### project
+
+- [Changelog](/docs/project/CHANGELOG.md): All notable changes to this project will be documented in this file.
+- [Contributing](/docs/project/CONTRIBUTING.md): Thank you for your interest in contributing to our project! This guide will help you get started with contributing effectively.
+- [Dependencies](/docs/project/DEPENDENCIES-latest.md): PHP (Composer) Dependencies
+- [License](/docs/project/LICENSE.md): This project is licensed under the GNU Affero General Public License v3.0 (AGPL-3.0).
+- [Security Policy](/docs/project/SECURITY.md): Supported Versions
+
+### projects
+
+Projects are organizational units that group clusters and deployments together. They serve as a way to organize resources and manage permissions at a higher level.
+
+- [Projects](/docs/projects.md)projects: landing page
+
+### roles_and_permissions
+
+This guide explains how roles and permissions work in the system. The permission system is designed to provide fine-grained access control for all resources.
+
+- [Roles and permissions](/docs/roles_and_permissions.md)roles_and_permissions: landing page
+
+### sso
+
+Kublade supports Single-Sign-On (SSO) through various social providers, allowing users to authenticate using their existing social media accounts. This guide explains how to configure and use SSO in your Kublade instance.
+
+- [Single-Sign-On (SSO)](/docs/sso.md)sso: landing page
+
+### templates
+
+- [Import from Helm chart](/docs/templates/create_import.md): This guide explains how to create a template by importing a Helm chart from a repository. The system supports both traditional Helm repositories and OCI-based repositories.
+- [Create](/docs/templates/create_manually.md): This guide explains how to create application templates manually. Templates are used to generate Kubernetes manifests that can be deployed using GitOps tools like FluxCD or ArgoCD.
+- [Synchronize from Git repository](/docs/templates/create_sync.md): This guide explains how to create templates by synchronizing them from a Git repository. The system supports both public and private Git repositories, allowing you to maintain your templates in version control.
+- [Blade templating](/docs/templates/use_blade.md): Blade templating allows you to create dynamic Kubernetes manifests by using variables and control structures. This guide explains how to use Blade templating effectively in your Kubernetes manifests.
+- [Port reservations](/docs/templates/use_ports.md): Port reservations allow you to dynamically assign and manage ports for your Kubernetes services. This guide explains how to use port claims in your templates.
