@@ -8,7 +8,7 @@
 
 Kublade Swagger API documentation
 
-- [Kublade API Documentation (v2.7.1)](/api.md)api: landing page
+- [Kublade API Documentation (v2.8.0)](/api.md)api: landing page
 
 ## blog
 
@@ -44,8 +44,14 @@ The AI companion integration in Kublade provides intelligent assistance through 
 
 - [AI Integration](/docs/ai-integration.md)ai-integration: landing page
 
+### authentication
+
+- [Magic Links](/docs/authentication/magic-links.md): Kublade supports password-less authentication through magic links, allowing users to log in securely without passwords. Magic links are automatically generated and can be used within automations or sent via email when requested.
+- [Single-Sign-On (SSO)](/docs/authentication/sso.md): Kublade supports Single-Sign-On (SSO) through various social providers, allowing users to authenticate using their existing social media accounts. This guide explains how to configure and use SSO in your Kublade instance.
+
 ### category
 
+- [Advanced Authentication](/docs/category/advanced-authentication.md)
 - [Clusters](/docs/category/clusters.md)
 - [Installation](/docs/category/installation.md)
 - [Project Information](/docs/category/project-information.md)
@@ -94,12 +100,6 @@ Projects are organizational units that group clusters and deployments together. 
 This guide explains how roles and permissions work in the system. The permission system is designed to provide fine-grained access control for all resources.
 
 - [Roles and permissions](/docs/roles_and_permissions.md)roles_and_permissions: landing page
-
-### sso
-
-Kublade supports Single-Sign-On (SSO) through various social providers, allowing users to authenticate using their existing social media accounts. This guide explains how to configure and use SSO in your Kublade instance.
-
-- [Single-Sign-On (SSO)](/docs/sso.md)sso: landing page
 
 ### templates
 

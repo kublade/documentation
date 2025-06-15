@@ -93,10 +93,11 @@ Search...
   * getGet a user
   * delDelete a user
   * patchUpdate a user
+  * postGenerate a magic link for the user
 
 [API docs by Redocly](https://redocly.com/redoc/)
 
-# Kublade API Documentation<!-- --> (<!-- -->v2.7.1<!-- -->)
+# Kublade API Documentation<!-- --> (<!-- -->v2.8.0<!-- -->)
 
 Download OpenAPI specification<!-- -->:[Download](https://documents.kublade.org/api-docs-latest.json)
 
@@ -3841,7 +3842,7 @@ Expand all  Collapse all
 }
 }`
 
-## [](#tag/Templates/operation/fd2v2.7.135f1fa2b9799e02b92a986b9)Update the field<!-- -->
+## [](#tag/Templates/operation/fd2v2.8.035f1fa2b9799e02b92a986b9)Update the field<!-- -->
 
 Update the field.
 
@@ -4938,6 +4939,10 @@ Validation error
 
 Unauthorized
 
+**404<!-- -->**
+
+Not found
+
 **500<!-- -->**
 
 Server error
@@ -4951,6 +4956,7 @@ https\://documents.kublade.org/api/users/{user\_id}
 * 200
 * 400
 * 401
+* 404
 * 500
 
 Content type
@@ -5013,6 +5019,10 @@ Validation error
 
 Unauthorized
 
+**404<!-- -->**
+
+Not found
+
 **500<!-- -->**
 
 Server error
@@ -5051,6 +5061,7 @@ Expand all  Collapse all
 * 200
 * 400
 * 401
+* 404
 * 500
 
 Content type
@@ -5075,6 +5086,77 @@ Expand all  Collapse all
 "created_at": "2021-01-01 00:00:00",
 "updated_at": "2021-01-01 00:00:00"
 }
+}
+}`
+
+## [](#tag/Users/operation/f450937fb7127a05a321c4f075fd65bd)Generate a magic link for the user<!-- -->
+
+Generate a magic link for the user.
+
+##### path<!-- --> Parameters
+
+|                  |                          |
+| ---------------- | ------------------------ |
+| user\_idrequired | stringThe ID of the user |
+
+### Responses
+
+**200<!-- -->**
+
+Magic link generated successfully
+
+**400<!-- -->**
+
+Validation error
+
+**401<!-- -->**
+
+Unauthorized
+
+**404<!-- -->**
+
+Not found
+
+**500<!-- -->**
+
+Server error
+
+post/api/users/{user\_id}/magic-link
+
+https\://documents.kublade.org/api/users/{user\_id}/magic-link
+
+### <!-- -->Response samples<!-- -->
+
+* 200
+* 400
+* 401
+* 404
+* 500
+
+Content type
+
+application/json
+
+Copy
+
+Expand all  Collapse all
+
+`{
+"status": "success",
+"message": "Magic link generated successfully",
+"data": {
+"user": {
+"id": "1",
+"name": "John Doe",
+"email": "john.doe@example.com",
+"email_verified_at": "2021-01-01T00:00:00Z",
+"password": "password123",
+"remember_token": "remember_token123",
+"created_at": "2021-01-01 00:00:00",
+"updated_at": "2021-01-01 00:00:00"
+},
+"link": "https://example.com/auth/magic-link/1234567890",
+"expires_at": "2025-01-01T00:00:0v2.8.0000Z"
 }
 }`
 
