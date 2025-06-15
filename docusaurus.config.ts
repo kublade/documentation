@@ -223,6 +223,18 @@ ${content}`
           },
       },
     ],
+    [
+      '@signalwire/docusaurus-plugin-llms-txt',
+      {
+        siteTitle: 'Kublade',
+        siteDescription: 'Effortless Kubernetes deployments powered by Laravel Blade',
+        depth: 2,
+        content: {
+          includeBlog: true,
+          includePages: true
+        }
+      }
+    ],
   ],
 };
 
