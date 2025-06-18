@@ -10,7 +10,7 @@ export default function WhyComparison(): ReactNode {
         <div className={clsx('row', styles.headline)}>
           <div className="col col--8 text--center">
             <h2 className="text--primary text--normal">Kublade vs. Other Tools</h2>
-            <p>Kublade is a modern GitOps-native platform for Kubernetes that provides a unified way to manage your Kubernetes resources. It is designed to be easy to use, secure, and scalable.</p>
+            <p>Kublade enhances your existing Kubernetes toolchain by providing a modern, GitOps-native layer that seamlessly integrates with and extends your current infrastructure. It unifies and streamlines your workflow while preserving the tools and processes your team already knows and trusts.</p>
           </div>
         </div>
         <div className="row mt-5">
