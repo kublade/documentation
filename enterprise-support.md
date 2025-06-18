@@ -2,7 +2,7 @@
 
 [![Kublade Logo](/img/logo-full.svg)![Kublade Logo](/img/logo-full.svg)](/index.md)
 
-[Documentation](/docs/intro.md)[API](/api.md)[Enterprise Support](/enterprise-support.md)
+[Why Kublade?](/why-kublade.md)[Documentation](/docs/intro.md)[API](/api.md)[Enterprise Support](/enterprise-support.md)
 
 [GitHub](https://github.com/kublade/kublade)[Gitter](https://matrix.to/#/#kublade:gitter.im)
 
@@ -17,10 +17,11 @@ Next level cloud solutions, backed by experts
 | Enterprise   | 240           | 140.00 €  | 33,600.00 € | 7%                    | 150.00 €        | Within 6 hours    | Email, Gittr, Phone (24/7)           |
 | Emergency    | 0             | 180.00 €  | 0.00 €      | 0%                    | 0.00 €          | Up to 1 hour      | Email, Gittr, Phone (24/7)           |
 
-[Talk to us - It's free ✉️](mailto:support@kublade.org)
+[Talk to an Expert](mailto:support@kublade.org)[Try it yourself](/docs/intro.md)
 
 Resources
 
+* [Why Kublade?](/why-kublade.md)
 * [Documentation](/docs/intro.md)
 * [API](/api.md)
 * [Enterprise Support](/enterprise-support.md)

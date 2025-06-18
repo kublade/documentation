@@ -35,6 +35,12 @@ Privacy Policy for Kublade
 
 - [Privacy Policy](/privacy-policy.md)privacy-policy: landing page
 
+## why-kublade
+
+Kublade is a tool that makes it easy to deploy Kubernetes applications.
+
+- [Why Choose Kublade?](/why-kublade.md)why-kublade: landing page
+
 ## docs
 
 

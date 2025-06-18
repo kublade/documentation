@@ -2,7 +2,7 @@
 
 [![Kublade Logo](/img/logo-full.svg)![Kublade Logo](/img/logo-full.svg)](/index.md)
 
-[Documentation](/docs/intro.md)[API](/api.md)[Enterprise Support](/enterprise-support.md)
+[Why Kublade?](/why-kublade.md)[Documentation](/docs/intro.md)[API](/api.md)[Enterprise Support](/enterprise-support.md)
 
 [GitHub](https://github.com/kublade/kublade)[Gitter](https://matrix.to/#/#kublade:gitter.im)
 
@@ -5162,6 +5162,7 @@ Expand all  Collapse all
 
 Resources
 
+* [Why Kublade?](/why-kublade.md)
 * [Documentation](/docs/intro.md)
 * [API](/api.md)
 * [Enterprise Support](/enterprise-support.md)
