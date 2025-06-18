@@ -82,9 +82,14 @@ function EnterpriseSupportHeader() {
               </table>
               <div className={styles.buttons}>
                 <Link
-                  className="button button--secondary button--lg"
+                  className="button button--primary button--lg"
                   to="mailto:support@kublade.org">
-                  Talk to us - It's free ✉️
+                  Talk to an Expert
+                </Link>
+                <Link
+                  className="button button--secondary button--lg"
+                  to="/docs/intro">
+                  Try it yourself
                 </Link>
               </div>
             </div>

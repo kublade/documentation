@@ -336,7 +336,8 @@
   background-color: var(--ifm-color-primary);
 }
 
-table.pricing {
+table.pricing,
+table.features {
   text-align: left;
   white-space: nowrap;
   width: 100%;
@@ -345,11 +346,13 @@ table.pricing {
   box-shadow: var(--ifm-navbar-shadow);
 }
 
-table.pricing thead tr th {
+table.pricing thead tr th,
+table.features thead tr th {
   vertical-align: unset;
 }
 
-table.pricing thead span.small {
+table.pricing thead span.small,
+table.features thead span.small {
   display: block;
   font-size: 0.875rem;
   font-weight: normal;
@@ -358,6 +361,30 @@ table.pricing thead span.small {
 table.pricing td.pricing__highlight {
   background-color: var(--ifm-color-primary);
   color: #ffffff;
+}
+
+table.features td:not(.table__stretch) {
+  text-align: center;
+}
+
+table.features i {
+  font-size: 1.25rem;
+}
+
+table.features i.bi-check-circle-fill {
+  color: var(--ifm-color-primary);
+}
+
+table.features i.bi-x-circle-fill {
+  color: #000000;
+}
+
+table.features i.bi-question-circle-fill {
+  color: var(--ifm-color-primary-lighter);
+}
+
+table.features i.bi-exclamation-triangle-fill {
+  color: #555555;
 }
 
 .pricing__container {

@@ -1,6 +1,7 @@
 import type {ReactNode} from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
+import Link from '@docusaurus/Link';
 
 export default function HomepageApp(): ReactNode {
   return (
@@ -33,6 +34,17 @@ export default function HomepageApp(): ReactNode {
               <div className="app__screenshot-feature app__screenshot-feature--variable">
                 Variable Support
               </div>
+            </div>
+          </div>
+        </div>
+        <div className="row" style={{marginTop: '5rem'}}>
+          <div className="col col--12">
+            <div className="text--center">
+              <Link
+                className="button button--primary button--lg"
+                to="mailto:support@kublade.org">
+                Request a Demo
+              </Link>
             </div>
           </div>
         </div>

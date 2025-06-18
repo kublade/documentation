@@ -18,3 +18,16 @@
 .subtitle {
   margin-bottom: 0;
 }
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+}
+
+@media (max-width: 996px) {
+  .buttons {
+    justify-content: center;
+  }
+}

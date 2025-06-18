@@ -81,6 +81,16 @@ const config: Config = {
         src: 'img/logo-full.svg',
       },
       items: [
+        {
+          href: '/why-kublade',
+          label: 'Why Kublade?',
+          position: 'left',
+        },
+        {
+          type: 'html',
+          position: 'left',
+          value: '<span class="navbar__separator"></span>',
+        },
         /*
         {
           href: '/blog',
@@ -128,6 +138,10 @@ const config: Config = {
         {
           title: 'Resources',
           items: [
+            {
+              label: 'Why Kublade?',
+              href: '/why-kublade',
+            },
             /*
             {
               label: 'Blog',
