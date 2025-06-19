@@ -8,7 +8,7 @@
 
 Kublade Swagger API documentation
 
-- [Kublade API Documentation (v2.8.0)](/api.md)api: landing page
+- [Kublade API Documentation (v2.9.0)](/api.md)api: landing page
 
 ## blog
 
