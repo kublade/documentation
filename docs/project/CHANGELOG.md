@@ -2,9 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
-## [2.9.0](https://github.com/kublade/kublade/compare/v2.8.0...v2.9.0) (2025-06-19)[​](#290-2025-06-19 "Direct link to 290-2025-06-19")
+## [2.10.0](https://github.com/kublade/kublade/compare/v2.9.0...v2.10.0) (2025-06-19)[​](#2100-2025-06-19 "Direct link to 2100-2025-06-19")
 
 ### Features[​](#features "Direct link to Features")
+
+* windowed style switch ([5db518f](https://github.com/kublade/kublade/commit/5db518f415cbe5a753e3bf8cd6cd48cb4a9ed2d9))
+
+## [2.9.0](https://github.com/kublade/kublade/compare/v2.8.0...v2.9.0) (2025-06-19)[​](#290-2025-06-19 "Direct link to 290-2025-06-19")
+
+### Features[​](#features-1 "Direct link to Features")
 
 * deployment approval process ([702c996](https://github.com/kublade/kublade/commit/702c9960eaebdb277aaa4b07d15959f257a92131))
 
@@ -17,7 +23,7 @@ All notable changes to this project will be documented in this file.
 
 ## [2.8.0](https://github.com/kublade/kublade/compare/v2.7.1...v2.8.0) (2025-06-15)[​](#280-2025-06-15 "Direct link to 280-2025-06-15")
 
-### Features[​](#features-1 "Direct link to Features")
+### Features[​](#features-2 "Direct link to Features")
 
 * magic link authentication ([4b01283](https://github.com/kublade/kublade/commit/4b01283686595fc64142072521e288242b3eaca9))
 
@@ -29,20 +35,20 @@ All notable changes to this project will be documented in this file.
 
 ## [2.7.0](https://github.com/kublade/kublade/compare/v2.6.0...v2.7.0) (2025-06-14)[​](#270-2025-06-14 "Direct link to 270-2025-06-14")
 
-### Features[​](#features-2 "Direct link to Features")
+### Features[​](#features-3 "Direct link to Features")
 
 * app status indicators ([be3f8a6](https://github.com/kublade/kublade/commit/be3f8a60c311c77711bce1861ae58ce8c8c4ef31))
 * windowed application look ([22307b8](https://github.com/kublade/kublade/commit/22307b811d5eb8548e8d4d63e4e18ddb12f49e94))
 
 ## [2.6.0](https://github.com/kublade/kublade/compare/v2.5.0...v2.6.0) (2025-06-14)[​](#260-2025-06-14 "Direct link to 260-2025-06-14")
 
-### Features[​](#features-3 "Direct link to Features")
+### Features[​](#features-4 "Direct link to Features")
 
 * spaced form fields ([9ce86a1](https://github.com/kublade/kublade/commit/9ce86a1aa567123fccdfe804a0e16f3a11994466))
 
 ## [2.5.0](https://github.com/kublade/kublade/compare/v2.4.3...v2.5.0) (2025-06-14)[​](#250-2025-06-14 "Direct link to 250-2025-06-14")
 
-### Features[​](#features-4 "Direct link to Features")
+### Features[​](#features-5 "Direct link to Features")
 
 * login form floating labels ([89bf32f](https://github.com/kublade/kublade/commit/89bf32fab42f002f65622b2d9dc737cb4ea81e33))
 * login theme improvements ([1c15571](https://github.com/kublade/kublade/commit/1c155719d1f921bb1a8999824b7dec5f1afeafaf))
@@ -67,7 +73,7 @@ All notable changes to this project will be documented in this file.
 
 ## [2.4.0](https://github.com/kublade/kublade/compare/v2.3.0...v2.4.0) (2025-06-11)[​](#240-2025-06-11 "Direct link to 240-2025-06-11")
 
-### Features[​](#features-5 "Direct link to Features")
+### Features[​](#features-6 "Direct link to Features")
 
 * **ai:** mcp call handler ([0f95c08](https://github.com/kublade/kublade/commit/0f95c08982bd18e7dd3c7aceea412af9ccd15694))
 * **ai:** mcp call router ([29544d0](https://github.com/kublade/kublade/commit/29544d0af25850ed3a6d439bfee3caa1cb879d33))
@@ -82,19 +88,19 @@ All notable changes to this project will be documented in this file.
 
 ## [2.3.0](https://github.com/kublade/kublade/compare/v2.2.0...v2.3.0) (2025-06-09)[​](#230-2025-06-09 "Direct link to 230-2025-06-09")
 
-### Features[​](#features-6 "Direct link to Features")
+### Features[​](#features-7 "Direct link to Features")
 
 * deployment limit ui ([e404755](https://github.com/kublade/kublade/commit/e40475568e847eb78899db5d11e5610e6b347ad8))
 
 ## [2.2.0](https://github.com/kublade/kublade/compare/v2.1.0...v2.2.0) (2025-06-07)[​](#220-2025-06-07 "Direct link to 220-2025-06-07")
 
-### Features[​](#features-7 "Direct link to Features")
+### Features[​](#features-8 "Direct link to Features")
 
 * **ai:** template field tool ([312f69e](https://github.com/kublade/kublade/commit/312f69ef751daf8d2eabd4894d7d30da292aa6df))
 
 ## [2.1.0](https://github.com/kublade/kublade/compare/v2.0.1...v2.1.0) (2025-06-07)[​](#210-2025-06-07 "Direct link to 210-2025-06-07")
 
-### Features[​](#features-8 "Direct link to Features")
+### Features[​](#features-9 "Direct link to Features")
 
 * **ai:** template port tool ([40fe35e](https://github.com/kublade/kublade/commit/40fe35e211e1eab9cf2bdae098aa9f37d21c640b))
 
@@ -114,14 +120,14 @@ All notable changes to this project will be documented in this file.
 
 * ai message storage encryption
 
-### Features[​](#features-9 "Direct link to Features")
+### Features[​](#features-10 "Direct link to Features")
 
 * ai chat tokens limit check ([224ced3](https://github.com/kublade/kublade/commit/224ced34483f0db99211782fbf4943490dcff083))
 * encrypted ai messages storage ([b35fc6e](https://github.com/kublade/kublade/commit/b35fc6e846b768ed494e2a954d016211ddac0de6))
 
 ## [1.39.0](https://github.com/kublade/kublade/compare/v1.38.3...v1.39.0) (2025-06-04)[​](#1390-2025-06-04 "Direct link to 1390-2025-06-04")
 
-### Features[​](#features-10 "Direct link to Features")
+### Features[​](#features-11 "Direct link to Features")
 
 * ai agent mode ([14a5d72](https://github.com/kublade/kublade/commit/14a5d72ce6f8ac700a6e90f16247996ac2c6369b))
 
@@ -145,7 +151,7 @@ All notable changes to this project will be documented in this file.
 
 ## [1.38.0](https://github.com/kublade/kublade/compare/v1.37.4...v1.38.0) (2025-06-01)[​](#1380-2025-06-01 "Direct link to 1380-2025-06-01")
 
-### Features[​](#features-11 "Direct link to Features")
+### Features[​](#features-12 "Direct link to Features")
 
 * ai companion ([e31db50](https://github.com/kublade/kublade/commit/e31db50bd3e617af95bd01059d821969552ddc6a))
 
@@ -175,7 +181,7 @@ All notable changes to this project will be documented in this file.
 
 ## [1.37.0](https://github.com/kublade/kublade/compare/v1.36.2...v1.37.0) (2025-05-31)[​](#1370-2025-05-31 "Direct link to 1370-2025-05-31")
 
-### Features[​](#features-12 "Direct link to Features")
+### Features[​](#features-13 "Direct link to Features")
 
 * update alert dismissal ([e1bb312](https://github.com/kublade/kublade/commit/e1bb3123f492b8f9cc6ecfd66ef9adf3e1dd4b9d))
 
@@ -193,7 +199,7 @@ All notable changes to this project will be documented in this file.
 
 ## [1.36.0](https://github.com/kublade/kublade/compare/v1.35.1...v1.36.0) (2025-05-31)[​](#1360-2025-05-31 "Direct link to 1360-2025-05-31")
 
-### Features[​](#features-13 "Direct link to Features")
+### Features[​](#features-14 "Direct link to Features")
 
 * automatic update checks ([e4aa191](https://github.com/kublade/kublade/commit/e4aa191092b27bd908dfa5986f099c2112b2ef1b))
 
@@ -210,7 +216,7 @@ All notable changes to this project will be documented in this file.
 
 ## [1.35.0](https://github.com/kublade/kublade/compare/v1.34.3...v1.35.0) (2025-05-31)[​](#1350-2025-05-31 "Direct link to 1350-2025-05-31")
 
-### Features[​](#features-14 "Direct link to Features")
+### Features[​](#features-15 "Direct link to Features")
 
 * template git import ([2b92b60](https://github.com/kublade/kublade/commit/2b92b60765c1dea4d6ab84390bd60c2eda00bf75))
 
@@ -234,7 +240,7 @@ All notable changes to this project will be documented in this file.
 
 ## [1.34.0](https://github.com/kublade/kublade/compare/v1.33.1...v1.34.0) (2025-05-28)[​](#1340-2025-05-28 "Direct link to 1340-2025-05-28")
 
-### Features[​](#features-15 "Direct link to Features")
+### Features[​](#features-16 "Direct link to Features")
 
 * social provider login ([b92b38d](https://github.com/kublade/kublade/commit/b92b38d6beb022af4ad8d287735eab7e135aeee8))
 
@@ -246,7 +252,7 @@ All notable changes to this project will be documented in this file.
 
 ## [1.33.0](https://github.com/kublade/kublade/compare/v1.32.1...v1.33.0) (2025-05-26)[​](#1330-2025-05-26 "Direct link to 1330-2025-05-26")
 
-### Features[​](#features-16 "Direct link to Features")
+### Features[​](#features-17 "Direct link to Features")
 
 * login background image ([fe27d55](https://github.com/kublade/kublade/commit/fe27d55f602d4918b5d3de2b5a4054c8c73d1665))
 
@@ -262,13 +268,13 @@ All notable changes to this project will be documented in this file.
 
 ## [1.32.0](https://github.com/kublade/kublade/compare/v1.31.0...v1.32.0) (2025-05-26)[​](#1320-2025-05-26 "Direct link to 1320-2025-05-26")
 
-### Features[​](#features-17 "Direct link to Features")
+### Features[​](#features-18 "Direct link to Features")
 
 * style re-write ([272e280](https://github.com/kublade/kublade/commit/272e280719dde6f09715060f487119f6dbf8a443))
 
 ## [1.31.0](https://github.com/kublade/kublade/compare/v1.30.2...v1.31.0) (2025-05-24)[​](#1310-2025-05-24 "Direct link to 1310-2025-05-24")
 
-### Features[​](#features-18 "Direct link to Features")
+### Features[​](#features-19 "Direct link to Features")
 
 * improved autocompletion ([1cf5b76](https://github.com/kublade/kublade/commit/1cf5b7637a3a263cce7816e09072e6ddf0a3d503))
 
@@ -286,7 +292,7 @@ All notable changes to this project will be documented in this file.
 
 ## [1.30.0](https://github.com/kublade/kublade/compare/v1.29.1...v1.30.0) (2025-05-23)[​](#1300-2025-05-23 "Direct link to 1300-2025-05-23")
 
-### Features[​](#features-19 "Direct link to Features")
+### Features[​](#features-20 "Direct link to Features")
 
 * api response error serialization ([c0ac558](https://github.com/kublade/kublade/commit/c0ac5581c03467cb0e78d58fb0fd9a0d68f271c8))
 
@@ -305,7 +311,7 @@ All notable changes to this project will be documented in this file.
 
 ## [1.29.0](https://github.com/kublade/kublade/compare/v1.28.2...v1.29.0) (2025-05-23)[​](#1290-2025-05-23 "Direct link to 1290-2025-05-23")
 
-### Features[​](#features-20 "Direct link to Features")
+### Features[​](#features-21 "Direct link to Features")
 
 * publish dependencies and changelog ([654d39e](https://github.com/kublade/kublade/commit/654d39e6c60c87666f5a3af2008f178e7343bdd9))
 
@@ -338,7 +344,7 @@ All notable changes to this project will be documented in this file.
 
 ## [1.28.0](https://github.com/kublade/kublade/compare/v1.27.2...v1.28.0) (2025-05-22)[​](#1280-2025-05-22 "Direct link to 1280-2025-05-22")
 
-### Features[​](#features-21 "Direct link to Features")
+### Features[​](#features-22 "Direct link to Features")
 
 * api documentation ([71eb87f](https://github.com/kublade/kublade/commit/71eb87fea496aca9178b0f5afe8fa2a5854a50d5))
 
@@ -356,7 +362,7 @@ All notable changes to this project will be documented in this file.
 
 ## [1.27.0](https://github.com/kublade/kublade/compare/v1.26.1...v1.27.0) (2025-05-19)[​](#1270-2025-05-19 "Direct link to 1270-2025-05-19")
 
-### Features[​](#features-22 "Direct link to Features")
+### Features[​](#features-23 "Direct link to Features")
 
 * general dashboard ([991e39b](https://github.com/kublade/kublade/commit/991e39ba2f3a86dc56b615c9ce8aa9abda370865))
 
@@ -368,19 +374,19 @@ All notable changes to this project will be documented in this file.
 
 ## [1.26.0](https://github.com/kublade/kublade/compare/v1.25.0...v1.26.0) (2025-05-18)[​](#1260-2025-05-18 "Direct link to 1260-2025-05-18")
 
-### Features[​](#features-23 "Direct link to Features")
+### Features[​](#features-24 "Direct link to Features")
 
 * permission ist object references ([4266c44](https://github.com/kublade/kublade/commit/4266c44a9a5272a47d9daa5d51123f563f00d4ce))
 
 ## [1.25.0](https://github.com/kublade/kublade/compare/v1.24.0...v1.25.0) (2025-05-16)[​](#1250-2025-05-16 "Direct link to 1250-2025-05-16")
 
-### Features[​](#features-24 "Direct link to Features")
+### Features[​](#features-25 "Direct link to Features")
 
 * favicon ([ced2fbb](https://github.com/kublade/kublade/commit/ced2fbb427911d368932dec5b902e6ff505f8ce2))
 
 ## [1.24.0](https://github.com/kublade/kublade/compare/v1.23.1...v1.24.0) (2025-05-16)[​](#1240-2025-05-16 "Direct link to 1240-2025-05-16")
 
-### Features[​](#features-25 "Direct link to Features")
+### Features[​](#features-26 "Direct link to Features")
 
 * granular permission settings ([edc1786](https://github.com/kublade/kublade/commit/edc1786e4eee302a47201e6da78c8bdfeb7bbf28))
 * user management ([15040e7](https://github.com/kublade/kublade/commit/15040e7459c7e9c61768cb3fdef5a93d71d86380))
@@ -393,7 +399,7 @@ All notable changes to this project will be documented in this file.
 
 ## [1.23.0](https://github.com/kublade/kublade/compare/v1.22.0...v1.23.0) (2025-05-08)[​](#1230-2025-05-08 "Direct link to 1230-2025-05-08")
 
-### Features[​](#features-26 "Direct link to Features")
+### Features[​](#features-27 "Direct link to Features")
 
 * **api:** cluster management endpoints ([fbbd462](https://github.com/kublade/kublade/commit/fbbd46270cb68de95bacc93e25b7fd806661c57b))
 * **api:** deployment management endpoints ([8b4b8b3](https://github.com/kublade/kublade/commit/8b4b8b32e73bf33b9a17f098d002138cc6cedeb4))
@@ -401,25 +407,25 @@ All notable changes to this project will be documented in this file.
 
 ## [1.22.0](https://github.com/kublade/kublade/compare/v1.21.0...v1.22.0) (2025-05-07)[​](#1220-2025-05-07 "Direct link to 1220-2025-05-07")
 
-### Features[​](#features-27 "Direct link to Features")
+### Features[​](#features-28 "Direct link to Features")
 
 * api response generator ([20d5aa1](https://github.com/kublade/kublade/commit/20d5aa1c420596053efba6f4fecf51a9682eb541))
 
 ## [1.21.0](https://github.com/kublade/kublade/compare/v1.20.0...v1.21.0) (2025-05-07)[​](#1210-2025-05-07 "Direct link to 1210-2025-05-07")
 
-### Features[​](#features-28 "Direct link to Features")
+### Features[​](#features-29 "Direct link to Features")
 
 * api method stubs ([19d139d](https://github.com/kublade/kublade/commit/19d139dae2df9ff1f49128b58c1383fb9a07fa90))
 
 ## [1.20.0](https://github.com/kublade/kublade/compare/v1.19.0...v1.20.0) (2025-05-07)[​](#1200-2025-05-07 "Direct link to 1200-2025-05-07")
 
-### Features[​](#features-29 "Direct link to Features")
+### Features[​](#features-30 "Direct link to Features")
 
 * rest api with jwt auth ([4365e4f](https://github.com/kublade/kublade/commit/4365e4fa5097af549f90c35f37f9179363f67171))
 
 ## [1.19.0](https://github.com/kublade/kublade/compare/v1.18.1...v1.19.0) (2025-05-04)[​](#1190-2025-05-04 "Direct link to 1190-2025-05-04")
 
-### Features[​](#features-30 "Direct link to Features")
+### Features[​](#features-31 "Direct link to Features")
 
 * deployment version history ([bc9ab6a](https://github.com/kublade/kublade/commit/bc9ab6abae8c2c0c294846993afaa9e45fd22487))
 
@@ -431,13 +437,13 @@ All notable changes to this project will be documented in this file.
 
 ## [1.18.0](https://github.com/kublade/kublade/compare/v1.17.0...v1.18.0) (2025-05-04)[​](#1180-2025-05-04 "Direct link to 1180-2025-05-04")
 
-### Features[​](#features-31 "Direct link to Features")
+### Features[​](#features-32 "Direct link to Features")
 
 * extended project dashboard ([41dbccc](https://github.com/kublade/kublade/commit/41dbccc2d3d08654be0cb64b74766c4846513dfa))
 
 ## [1.17.0](https://github.com/kublade/kublade/compare/v1.16.1...v1.17.0) (2025-05-04)[​](#1170-2025-05-04 "Direct link to 1170-2025-05-04")
 
-### Features[​](#features-32 "Direct link to Features")
+### Features[​](#features-33 "Direct link to Features")
 
 * deployment version history ([1527d42](https://github.com/kublade/kublade/commit/1527d4260f073bad4d9b75b6e5c29ab5f07d2914))
 
@@ -449,19 +455,19 @@ All notable changes to this project will be documented in this file.
 
 ## [1.16.0](https://github.com/kublade/kublade/compare/v1.15.0...v1.16.0) (2025-05-04)[​](#1160-2025-05-04 "Direct link to 1160-2025-05-04")
 
-### Features[​](#features-33 "Direct link to Features")
+### Features[​](#features-34 "Direct link to Features")
 
 * network policy management ([494cbd7](https://github.com/kublade/kublade/commit/494cbd7576efbe1b1b3bbdb0121a7047e0c19c55))
 
 ## [1.15.0](https://github.com/kublade/kublade/compare/v1.14.0...v1.15.0) (2025-05-04)[​](#1150-2025-05-04 "Direct link to 1150-2025-05-04")
 
-### Features[​](#features-34 "Direct link to Features")
+### Features[​](#features-35 "Direct link to Features")
 
 * deployment pod logs ([692dc7f](https://github.com/kublade/kublade/commit/692dc7f16f3d4aa9bcde54b5bc4cba1b2cde3d3f))
 
 ## [1.14.0](https://github.com/kublade/kublade/compare/v1.13.2...v1.14.0) (2025-05-04)[​](#1140-2025-05-04 "Direct link to 1140-2025-05-04")
 
-### Features[​](#features-35 "Direct link to Features")
+### Features[​](#features-36 "Direct link to Features")
 
 * cluster statistics ([290dc3d](https://github.com/kublade/kublade/commit/290dc3db7a8b7fec5684729c61bbbee0e581f24a))
 
@@ -479,7 +485,7 @@ All notable changes to this project will be documented in this file.
 
 ## [1.13.0](https://github.com/kublade/kublade/compare/v1.12.1...v1.13.0) (2025-05-03)[​](#1130-2025-05-03 "Direct link to 1130-2025-05-03")
 
-### Features[​](#features-36 "Direct link to Features")
+### Features[​](#features-37 "Direct link to Features")
 
 * deployment file previews ([b6e10ab](https://github.com/kublade/kublade/commit/b6e10ab4166b0e4d3dce1721da8c7f6794978c0a))
 
@@ -491,26 +497,26 @@ All notable changes to this project will be documented in this file.
 
 ## [1.12.0](https://github.com/kublade/kublade/compare/v1.11.0...v1.12.0) (2025-05-03)[​](#1120-2025-05-03 "Direct link to 1120-2025-05-03")
 
-### Features[​](#features-37 "Direct link to Features")
+### Features[​](#features-38 "Direct link to Features")
 
 * chart import from helm repository form ([354b67d](https://github.com/kublade/kublade/commit/354b67d07dee7badcf716ae6972b869889f20306))
 * helm manifest generator ([dd5a752](https://github.com/kublade/kublade/commit/dd5a75250763f2a269a8758648292a552b2a6eeb))
 
 ## [1.11.0](https://github.com/kublade/kublade/compare/v1.10.0...v1.11.0) (2025-05-03)[​](#1110-2025-05-03 "Direct link to 1110-2025-05-03")
 
-### Features[​](#features-38 "Direct link to Features")
+### Features[​](#features-39 "Direct link to Features")
 
 * auto-update deployments on template file modifications ([e3282ca](https://github.com/kublade/kublade/commit/e3282ca89f9bb1dec05f13ad7dfcfd707d83cd42))
 
 ## [1.10.0](https://github.com/kublade/kublade/compare/v1.9.0...v1.10.0) (2025-05-03)[​](#1100-2025-05-03 "Direct link to 1100-2025-05-03")
 
-### Features[​](#features-39 "Direct link to Features")
+### Features[​](#features-40 "Direct link to Features")
 
 * deployment dashboard ([9be5199](https://github.com/kublade/kublade/commit/9be5199344230b1c938502b43175172064744837))
 
 ## [1.9.0](https://github.com/kublade/kublade/compare/v1.8.2...v1.9.0) (2025-05-03)[​](#190-2025-05-03 "Direct link to 190-2025-05-03")
 
-### Features[​](#features-40 "Direct link to Features")
+### Features[​](#features-41 "Direct link to Features")
 
 * basic project dashboard ([58e652f](https://github.com/kublade/kublade/commit/58e652f75f78d9a795d2a7bc79f048c84216b762))
 
@@ -528,7 +534,7 @@ All notable changes to this project will be documented in this file.
 
 ## [1.8.0](https://github.com/kublade/kublade/compare/v1.7.1...v1.8.0) (2025-05-01)[​](#180-2025-05-01 "Direct link to 180-2025-05-01")
 
-### Features[​](#features-41 "Direct link to Features")
+### Features[​](#features-42 "Direct link to Features")
 
 * cluster connection check ([a023fff](https://github.com/kublade/kublade/commit/a023fff15543b74ade80bf7ac5bf2486bb80404c))
 
@@ -540,7 +546,7 @@ All notable changes to this project will be documented in this file.
 
 ## [1.7.0](https://github.com/kublade/kublade/compare/v1.6.1...v1.7.0) (2025-05-01)[​](#170-2025-05-01 "Direct link to 170-2025-05-01")
 
-### Features[​](#features-42 "Direct link to Features")
+### Features[​](#features-43 "Direct link to Features")
 
 * remove meta service deployments ([3c0c1c4](https://github.com/kublade/kublade/commit/3c0c1c44820f01ce388219f4de4a2d7670b332b0))
 
@@ -552,7 +558,7 @@ All notable changes to this project will be documented in this file.
 
 ## [1.6.0](https://github.com/kublade/kublade/compare/v1.5.3...v1.6.0) (2025-04-28)[​](#160-2025-04-28 "Direct link to 160-2025-04-28")
 
-### Features[​](#features-43 "Direct link to Features")
+### Features[​](#features-44 "Direct link to Features")
 
 * **cluster:** limit monitoring job ([466f1a7](https://github.com/kublade/kublade/commit/466f1a7574378a7b12b1cbd192a96c6c59344cf2))
 * **cluster:** status monitoring job ([2f7ec41](https://github.com/kublade/kublade/commit/2f7ec4189f88c181ecea4d504c5bccab4cfb7551))
@@ -582,7 +588,7 @@ All notable changes to this project will be documented in this file.
 
 ## [1.5.0](https://github.com/kublade/kublade/compare/v1.4.2...v1.5.0) (2025-04-25)[​](#150-2025-04-25 "Direct link to 150-2025-04-25")
 
-### Features[​](#features-44 "Direct link to Features")
+### Features[​](#features-45 "Direct link to Features")
 
 * git and k8s helpers ([643dd7e](https://github.com/kublade/kublade/commit/643dd7e417be7a903da87ea1d1abcd98341c7d79))
 
@@ -600,31 +606,31 @@ All notable changes to this project will be documented in this file.
 
 ## [1.4.0](https://github.com/kublade/kublade/compare/v1.3.0...v1.4.0) (2025-04-24)[​](#140-2025-04-24 "Direct link to 140-2025-04-24")
 
-### Features[​](#features-45 "Direct link to Features")
+### Features[​](#features-46 "Direct link to Features")
 
 * advanced fields ([4645537](https://github.com/kublade/kublade/commit/46455371b16b97736f275c11999989c163bbcf5a))
 
 ## [1.3.0](https://github.com/kublade/kublade/compare/v1.2.0...v1.3.0) (2025-04-24)[​](#130-2025-04-24 "Direct link to 130-2025-04-24")
 
-### Features[​](#features-46 "Direct link to Features")
+### Features[​](#features-47 "Direct link to Features")
 
 * advanced fields ([a1e6deb](https://github.com/kublade/kublade/commit/a1e6deb457f34e1f33f6f22b0637598e7020ad4e))
 
 ## [1.2.0](https://github.com/kublade/kublade/compare/v1.1.0...v1.2.0) (2025-04-19)[​](#120-2025-04-19 "Direct link to 120-2025-04-19")
 
-### Features[​](#features-47 "Direct link to Features")
+### Features[​](#features-48 "Direct link to Features")
 
 * deployment management ([c165df3](https://github.com/kublade/kublade/commit/c165df3828bf0119529b29e27e27ad7f683e7c60))
 
 ## [1.1.0](https://github.com/kublade/kublade/compare/v1.0.0...v1.1.0) (2025-04-18)[​](#110-2025-04-18 "Direct link to 110-2025-04-18")
 
-### Features[​](#features-48 "Direct link to Features")
+### Features[​](#features-49 "Direct link to Features")
 
 * project preservation ([1d73e0f](https://github.com/kublade/kublade/commit/1d73e0fb36b7e2d96dd97574e44ea198898a8382))
 
 ## 1.0.0 (2025-04-18)[​](#100-2025-04-18 "Direct link to 1.0.0 (2025-04-18)")
 
-### Features[​](#features-49 "Direct link to Features")
+### Features[​](#features-50 "Direct link to Features")
 
 * add releaserc file ([eccf43c](https://github.com/kublade/kublade/commit/eccf43c4b1c1bfc9a104e1b440df1b0a71c95ab0))
 * application database migrations ([fc27f05](https://github.com/kublade/kublade/commit/fc27f0557b4fb0bbea9b8f9903cdef92775c2dd0))

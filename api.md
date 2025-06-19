@@ -98,7 +98,7 @@ Search...
 
 [API docs by Redocly](https://redocly.com/redoc/)
 
-# Kublade API Documentation<!-- --> (<!-- -->v2.9.0<!-- -->)
+# Kublade API Documentation<!-- --> (<!-- -->v2.10.0<!-- -->)
 
 Download OpenAPI specification<!-- -->:[Download](https://documents.kublade.org/api-docs-latest.json)
 
@@ -3924,7 +3924,7 @@ Expand all  Collapse all
 }
 }`
 
-## [](#tag/Templates/operation/fd2v2.9.035f1fa2b9799e02b92a986b9)Update the field<!-- -->
+## [](#tag/Templates/operation/fd2v2.10.035f1fa2b9799e02b92a986b9)Update the field<!-- -->
 
 Update the field.
 
@@ -5238,7 +5238,7 @@ Expand all  Collapse all
 "updated_at": "2021-01-01 00:00:00"
 },
 "link": "https://example.com/auth/magic-link/1234567890",
-"expires_at": "2025-01-01T00:00:0v2.9.0000Z"
+"expires_at": "2025-01-01T00:00:0v2.10.0000Z"
 }
 }`
 
