@@ -8,6 +8,11 @@
 
 Search...
 
+* Activities
+
+  * getList activities
+  * getGet an activity
+
 * Authentication
 
   * postRegister a new user
@@ -98,7 +103,7 @@ Search...
 
 [API docs by Redocly](https://redocly.com/redoc/)
 
-# Kublade API Documentation<!-- --> (<!-- -->v2.10.0<!-- -->)
+# Kublade API Documentation<!-- --> (<!-- -->v2.11.2<!-- -->)
 
 Download OpenAPI specification<!-- -->:[Download](https://documents.kublade.org/api-docs-latest.json)
 
@@ -121,6 +126,150 @@ License:
 [Apache-2.0](https://kublade.org/docs/license/)
 
 Kublade Swagger API documentation
+
+## [](#tag/Activities)Activities
+
+Endpoints for activity management
+
+## [](#tag/Activities/operation/3b78901ee200dfb78bedd0e884122b6d)List activities<!-- -->
+
+List the activities.
+
+##### query<!-- --> Parameters
+
+|        |                             |
+| ------ | --------------------------- |
+| cursor | stringCursor for pagination |
+
+### Responses
+
+**200<!-- -->**
+
+Activities retrieved successfully
+
+**401<!-- -->**
+
+Unauthorized
+
+**500<!-- -->**
+
+Server error
+
+get/api/activities
+
+https\://documents.kublade.org/api/activities
+
+### <!-- -->Response samples<!-- -->
+
+* 200
+* 401
+* 500
+
+Content type
+
+application/json
+
+Copy
+
+Expand all  Collapse all
+
+`{
+"status": "success",
+"message": "Roles retrieved successfully",
+"data": {
+"activities": [
+{
+"id": "string",
+"log_name": "string",
+"causer_id": "string",
+"causer_type": "string",
+"event": "string",
+"subject_type": "string",
+"subject_id": "string",
+"properties": { },
+"created_at": "2019-08-24T14:15:22Z",
+"updated_at": "2019-08-24T14:15:22Z",
+"deleted_at": "2019-08-24T14:15:22Z"
+}
+],
+"links": {
+"next": "string",
+"prev": "string"
+}
+}
+}`
+
+## [](#tag/Activities/operation/24cf1a07d153ebd7a0b11124d6484ba2)Get an activity<!-- -->
+
+Get the role.
+
+##### path<!-- --> Parameters
+
+|                      |                              |
+| -------------------- | ---------------------------- |
+| activity\_idrequired | stringThe ID of the activity |
+
+### Responses
+
+**200<!-- -->**
+
+Activity retrieved successfully
+
+**400<!-- -->**
+
+Validation error
+
+**401<!-- -->**
+
+Unauthorized
+
+**404<!-- -->**
+
+Not found
+
+**500<!-- -->**
+
+Server error
+
+get/api/activities/{activity\_id}
+
+https\://documents.kublade.org/api/activities/{activity\_id}
+
+### <!-- -->Response samples<!-- -->
+
+* 200
+* 400
+* 401
+* 404
+* 500
+
+Content type
+
+application/json
+
+Copy
+
+Expand all  Collapse all
+
+`{
+"status": "success",
+"message": "Activity retrieved successfully",
+"data": {
+"activity": {
+"id": "string",
+"log_name": "string",
+"causer_id": "string",
+"causer_type": "string",
+"event": "string",
+"subject_type": "string",
+"subject_id": "string",
+"properties": { },
+"created_at": "2019-08-24T14:15:22Z",
+"updated_at": "2019-08-24T14:15:22Z",
+"deleted_at": "2019-08-24T14:15:22Z"
+}
+}
+}`
 
 ## [](#tag/Authentication)Authentication
 
@@ -2118,9 +2267,9 @@ Get the role.
 
 ##### path<!-- --> Parameters
 
-|                  |                          |
-| ---------------- | ------------------------ |
-| role\_idrequired | stringThe ID of the role |
+|                  |                           |
+| ---------------- | ------------------------- |
+| role\_idrequired | integerThe ID of the role |
 
 ### Responses
 
@@ -2184,9 +2333,9 @@ Delete the role.
 
 ##### path<!-- --> Parameters
 
-|                  |                          |
-| ---------------- | ------------------------ |
-| role\_idrequired | stringThe ID of the role |
+|                  |                           |
+| ---------------- | ------------------------- |
+| role\_idrequired | integerThe ID of the role |
 
 ### Responses
 
@@ -2245,9 +2394,9 @@ Update the role.
 
 ##### path<!-- --> Parameters
 
-|                  |                          |
-| ---------------- | ------------------------ |
-| role\_idrequired | stringThe ID of the role |
+|                  |                           |
+| ---------------- | ------------------------- |
+| role\_idrequired | integerThe ID of the role |
 
 ##### Request Body schema: application/jsonrequired
 
@@ -3924,7 +4073,7 @@ Expand all  Collapse all
 }
 }`
 
-## [](#tag/Templates/operation/fd2v2.10.035f1fa2b9799e02b92a986b9)Update the field<!-- -->
+## [](#tag/Templates/operation/fd2v2.11.235f1fa2b9799e02b92a986b9)Update the field<!-- -->
 
 Update the field.
 
@@ -5238,7 +5387,7 @@ Expand all  Collapse all
 "updated_at": "2021-01-01 00:00:00"
 },
 "link": "https://example.com/auth/magic-link/1234567890",
-"expires_at": "2025-01-01T00:00:0v2.10.0000Z"
+"expires_at": "2025-01-01T00:00:0v2.11.2000Z"
 }
 }`
 
