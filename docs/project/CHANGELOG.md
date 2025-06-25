@@ -2,15 +2,27 @@
 
 All notable changes to this project will be documented in this file.
 
-## [2.11.2](https://github.com/kublade/kublade/compare/v2.11.1...v2.11.2) (2025-06-21)[​](#2112-2025-06-21 "Direct link to 2112-2025-06-21")
+## [2.11.4](https://github.com/kublade/kublade/compare/v2.11.3...v2.11.4) (2025-06-25)[​](#2114-2025-06-25 "Direct link to 2114-2025-06-25")
 
 ### Bug Fixes[​](#bug-fixes "Direct link to Bug Fixes")
+
+* responsive tables ([c325936](https://github.com/kublade/kublade/commit/c325936d0b78e401ca9038f37f84880cf3887486))
+
+## [2.11.3](https://github.com/kublade/kublade/compare/v2.11.2...v2.11.3) (2025-06-25)[​](#2113-2025-06-25 "Direct link to 2113-2025-06-25")
+
+### Bug Fixes[​](#bug-fixes-1 "Direct link to Bug Fixes")
+
+* table pagination alignment ([93851b9](https://github.com/kublade/kublade/commit/93851b9cd8fb6f37cfffecc960504b1e52ab5fa0))
+
+## [2.11.2](https://github.com/kublade/kublade/compare/v2.11.1...v2.11.2) (2025-06-21)[​](#2112-2025-06-21 "Direct link to 2112-2025-06-21")
+
+### Bug Fixes[​](#bug-fixes-2 "Direct link to Bug Fixes")
 
 * activity controller classname ([436fc46](https://github.com/kublade/kublade/commit/436fc4683d680f669acc80670df647c6b66667f6))
 
 ## [2.11.1](https://github.com/kublade/kublade/compare/v2.11.0...v2.11.1) (2025-06-21)[​](#2111-2025-06-21 "Direct link to 2111-2025-06-21")
 
-### Bug Fixes[​](#bug-fixes-1 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-3 "Direct link to Bug Fixes")
 
 * automatic permissions sync ([755a2ff](https://github.com/kublade/kublade/commit/755a2ff91be99e77805607cf369a5bf2da6a1660))
 
@@ -32,7 +44,7 @@ All notable changes to this project will be documented in this file.
 
 * deployment approval process ([702c996](https://github.com/kublade/kublade/commit/702c9960eaebdb277aaa4b07d15959f257a92131))
 
-### Bug Fixes[​](#bug-fixes-2 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-4 "Direct link to Bug Fixes")
 
 * disable auto-approval on deployment creation ([e30068f](https://github.com/kublade/kublade/commit/e30068f4216c72312b53e252f2f86bab4cf992a1))
 * modified status tests ([fef2b78](https://github.com/kublade/kublade/commit/fef2b787a7e850e5d7b45f7248d6b33f17436232))
@@ -47,7 +59,7 @@ All notable changes to this project will be documented in this file.
 
 ## [2.7.1](https://github.com/kublade/kublade/compare/v2.7.0...v2.7.1) (2025-06-14)[​](#271-2025-06-14 "Direct link to 271-2025-06-14")
 
-### Bug Fixes[​](#bug-fixes-3 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-5 "Direct link to Bug Fixes")
 
 * app status indicators ([d1ed8e8](https://github.com/kublade/kublade/commit/d1ed8e8591f3c3de1924bfbddc470e8d27c81add))
 
@@ -73,19 +85,19 @@ All notable changes to this project will be documented in this file.
 
 ## [2.4.3](https://github.com/kublade/kublade/compare/v2.4.2...v2.4.3) (2025-06-13)[​](#243-2025-06-13 "Direct link to 243-2025-06-13")
 
-### Bug Fixes[​](#bug-fixes-4 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-6 "Direct link to Bug Fixes")
 
 * login overflow identification ([d1f2443](https://github.com/kublade/kublade/commit/d1f244370502459bab7aa6bc432ce876f1fd0c40))
 
 ## [2.4.2](https://github.com/kublade/kublade/compare/v2.4.1...v2.4.2) (2025-06-13)[​](#242-2025-06-13 "Direct link to 242-2025-06-13")
 
-### Bug Fixes[​](#bug-fixes-5 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-7 "Direct link to Bug Fixes")
 
 * chart colors ([c9c34df](https://github.com/kublade/kublade/commit/c9c34dfe279e81d40b24eb16e5ffeaa8c6b91a35))
 
 ## [2.4.1](https://github.com/kublade/kublade/compare/v2.4.0...v2.4.1) (2025-06-13)[​](#241-2025-06-13 "Direct link to 241-2025-06-13")
 
-### Bug Fixes[​](#bug-fixes-6 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-8 "Direct link to Bug Fixes")
 
 * update failure warning alert type ([9c56d44](https://github.com/kublade/kublade/commit/9c56d442ab2db8ff2918742588dd1af68b8a534e))
 
@@ -99,7 +111,7 @@ All notable changes to this project will be documented in this file.
 * **ai:** vector generation artisan command ([e4ef891](https://github.com/kublade/kublade/commit/e4ef891d7befd1fa885dd9692636ee7a13d37beb))
 * **ai:** vector router implementation ([b59866c](https://github.com/kublade/kublade/commit/b59866c2763d775d77088981a417d8268347dd8b))
 
-### Bug Fixes[​](#bug-fixes-7 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-9 "Direct link to Bug Fixes")
 
 * environment variables example ([953158d](https://github.com/kublade/kublade/commit/953158dd733c68b912d397b055f3d6d75b5f7661))
 * missing mcp handler import ([99e3ab6](https://github.com/kublade/kublade/commit/99e3ab63664aeaae5ab72d2651d9666e7163ab3a))
@@ -122,13 +134,13 @@ All notable changes to this project will be documented in this file.
 
 * **ai:** template port tool ([40fe35e](https://github.com/kublade/kublade/commit/40fe35e211e1eab9cf2bdae098aa9f37d21c640b))
 
-### Bug Fixes[​](#bug-fixes-8 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-10 "Direct link to Bug Fixes")
 
 * **ai:** file and folder tool ([b4e86e1](https://github.com/kublade/kublade/commit/b4e86e142cf92eb773bc1509fe9f2061ed08285f))
 
 ## [2.0.1](https://github.com/kublade/kublade/compare/v2.0.0...v2.0.1) (2025-06-06)[​](#201-2025-06-06 "Direct link to 201-2025-06-06")
 
-### Bug Fixes[​](#bug-fixes-9 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-11 "Direct link to Bug Fixes")
 
 * flash alerts ([18f838e](https://github.com/kublade/kublade/commit/18f838ed693a2457a1d6e62aa454f58497a23ffe))
 
@@ -151,19 +163,19 @@ All notable changes to this project will be documented in this file.
 
 ## [1.38.3](https://github.com/kublade/kublade/compare/v1.38.2...v1.38.3) (2025-06-03)[​](#1383-2025-06-03 "Direct link to 1383-2025-06-03")
 
-### Bug Fixes[​](#bug-fixes-10 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-12 "Direct link to Bug Fixes")
 
 * ai button position ([bdb64b2](https://github.com/kublade/kublade/commit/bdb64b25af1b0c0fdcd119027242620ff4942cb3))
 
 ## [1.38.2](https://github.com/kublade/kublade/compare/v1.38.1...v1.38.2) (2025-06-02)[​](#1382-2025-06-02 "Direct link to 1382-2025-06-02")
 
-### Bug Fixes[​](#bug-fixes-11 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-13 "Direct link to Bug Fixes")
 
 * generalize ai config ([d0eec6a](https://github.com/kublade/kublade/commit/d0eec6a64b3d59b59c6f810d1a8a5ebaf9cf50d2))
 
 ## [1.38.1](https://github.com/kublade/kublade/compare/v1.38.0...v1.38.1) (2025-06-01)[​](#1381-2025-06-01 "Direct link to 1381-2025-06-01")
 
-### Bug Fixes[​](#bug-fixes-12 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-14 "Direct link to Bug Fixes")
 
 * remove ai widget from auth routes ([ce259b6](https://github.com/kublade/kublade/commit/ce259b6f791fe836b69e887ddc487ee4be57f0ae))
 
@@ -175,25 +187,25 @@ All notable changes to this project will be documented in this file.
 
 ## [1.37.4](https://github.com/kublade/kublade/compare/v1.37.3...v1.37.4) (2025-06-01)[​](#1374-2025-06-01 "Direct link to 1374-2025-06-01")
 
-### Bug Fixes[​](#bug-fixes-13 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-15 "Direct link to Bug Fixes")
 
 * create all variables on deployment creation ([1660b3c](https://github.com/kublade/kublade/commit/1660b3c23894fab1305eb6c31e6c32472347b7c0))
 
 ## [1.37.3](https://github.com/kublade/kublade/compare/v1.37.2...v1.37.3) (2025-06-01)[​](#1373-2025-06-01 "Direct link to 1373-2025-06-01")
 
-### Bug Fixes[​](#bug-fixes-14 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-16 "Direct link to Bug Fixes")
 
 * remove deprecated ressource ownership checks ([92b5131](https://github.com/kublade/kublade/commit/92b5131fbe43176071a8093386dcce18c5c26221))
 
 ## [1.37.2](https://github.com/kublade/kublade/compare/v1.37.1...v1.37.2) (2025-05-31)[​](#1372-2025-05-31 "Direct link to 1372-2025-05-31")
 
-### Bug Fixes[​](#bug-fixes-15 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-17 "Direct link to Bug Fixes")
 
 * version check ([8205f4e](https://github.com/kublade/kublade/commit/8205f4e9be0ad637742c9bce3c0ee01f24c4d4a2))
 
 ## [1.37.1](https://github.com/kublade/kublade/compare/v1.37.0...v1.37.1) (2025-05-31)[​](#1371-2025-05-31 "Direct link to 1371-2025-05-31")
 
-### Bug Fixes[​](#bug-fixes-16 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-18 "Direct link to Bug Fixes")
 
 * reset composer file to allow proper version replacements ([9597fe5](https://github.com/kublade/kublade/commit/9597fe5077c8979f6631c5bdd0f79cea643c947b))
 
@@ -205,13 +217,13 @@ All notable changes to this project will be documented in this file.
 
 ## [1.36.2](https://github.com/kublade/kublade/compare/v1.36.1...v1.36.2) (2025-05-31)[​](#1362-2025-05-31 "Direct link to 1362-2025-05-31")
 
-### Bug Fixes[​](#bug-fixes-17 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-19 "Direct link to Bug Fixes")
 
 * push composer file by semantic ([a0b5814](https://github.com/kublade/kublade/commit/a0b5814a9b45d26bf0d384dfc567bbeb4a53e24d))
 
 ## [1.36.1](https://github.com/kublade/kublade/compare/v1.36.0...v1.36.1) (2025-05-31)[​](#1361-2025-05-31 "Direct link to 1361-2025-05-31")
 
-### Bug Fixes[​](#bug-fixes-18 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-20 "Direct link to Bug Fixes")
 
 * version number replacements ([dcadd01](https://github.com/kublade/kublade/commit/dcadd01830aa06ecf25ccfd853b3b60f984837b6))
 
@@ -221,14 +233,14 @@ All notable changes to this project will be documented in this file.
 
 * automatic update checks ([e4aa191](https://github.com/kublade/kublade/commit/e4aa191092b27bd908dfa5986f099c2112b2ef1b))
 
-### Bug Fixes[​](#bug-fixes-19 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-21 "Direct link to Bug Fixes")
 
 * semantic release dependencies ([e81979a](https://github.com/kublade/kublade/commit/e81979a10a13c4b6e57bfb703964eff55a83ef58))
 * semantic release dependency installation ([c94ab45](https://github.com/kublade/kublade/commit/c94ab45be2991cd22c56a873555115b6829b3966))
 
 ## [1.35.1](https://github.com/kublade/kublade/compare/v1.35.0...v1.35.1) (2025-05-31)[​](#1351-2025-05-31 "Direct link to 1351-2025-05-31")
 
-### Bug Fixes[​](#bug-fixes-20 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-22 "Direct link to Bug Fixes")
 
 * yaml generation data availability ([8a34e26](https://github.com/kublade/kublade/commit/8a34e261607c4e00cca0c1dc95ba6dcdc67eb2bd))
 
@@ -240,19 +252,19 @@ All notable changes to this project will be documented in this file.
 
 ## [1.34.3](https://github.com/kublade/kublade/compare/v1.34.2...v1.34.3) (2025-05-31)[​](#1343-2025-05-31 "Direct link to 1343-2025-05-31")
 
-### Bug Fixes[​](#bug-fixes-21 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-23 "Direct link to Bug Fixes")
 
 * wrong license in composer json ([a94e2b5](https://github.com/kublade/kublade/commit/a94e2b5b6b376565113643cd6c29034c73a5d564))
 
 ## [1.34.2](https://github.com/kublade/kublade/compare/v1.34.1...v1.34.2) (2025-05-31)[​](#1342-2025-05-31 "Direct link to 1342-2025-05-31")
 
-### Bug Fixes[​](#bug-fixes-22 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-24 "Direct link to Bug Fixes")
 
 * icon only link titles ([5514b62](https://github.com/kublade/kublade/commit/5514b626105a154b252f1bf936c69d432d10cede))
 
 ## [1.34.1](https://github.com/kublade/kublade/compare/v1.34.0...v1.34.1) (2025-05-30)[​](#1341-2025-05-30 "Direct link to 1341-2025-05-30")
 
-### Bug Fixes[​](#bug-fixes-23 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-25 "Direct link to Bug Fixes")
 
 * secure session cookie configuration ([fce08f6](https://github.com/kublade/kublade/commit/fce08f611ae2e8625932826169766f174ce46bcb))
 
@@ -264,7 +276,7 @@ All notable changes to this project will be documented in this file.
 
 ## [1.33.1](https://github.com/kublade/kublade/compare/v1.33.0...v1.33.1) (2025-05-27)[​](#1331-2025-05-27 "Direct link to 1331-2025-05-27")
 
-### Bug Fixes[​](#bug-fixes-24 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-26 "Direct link to Bug Fixes")
 
 * corporate design adherence ([2a82f32](https://github.com/kublade/kublade/commit/2a82f32914d2d5877432d80abf89848c5f291f27))
 
@@ -274,13 +286,13 @@ All notable changes to this project will be documented in this file.
 
 * login background image ([fe27d55](https://github.com/kublade/kublade/commit/fe27d55f602d4918b5d3de2b5a4054c8c73d1665))
 
-### Bug Fixes[​](#bug-fixes-25 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-27 "Direct link to Bug Fixes")
 
 * swap favicon ([ad97ee1](https://github.com/kublade/kublade/commit/ad97ee100f6596d89c156bacf8118658ba3fef5a))
 
 ## [1.32.1](https://github.com/kublade/kublade/compare/v1.32.0...v1.32.1) (2025-05-26)[​](#1321-2025-05-26 "Direct link to 1321-2025-05-26")
 
-### Bug Fixes[​](#bug-fixes-26 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-28 "Direct link to Bug Fixes")
 
 * login action button variant ([27759e1](https://github.com/kublade/kublade/commit/27759e114f8fe1dab261c7cff2920fc1563dd2d9))
 
@@ -298,13 +310,13 @@ All notable changes to this project will be documented in this file.
 
 ## [1.30.2](https://github.com/kublade/kublade/compare/v1.30.1...v1.30.2) (2025-05-23)[​](#1302-2025-05-23 "Direct link to 1302-2025-05-23")
 
-### Bug Fixes[​](#bug-fixes-27 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-29 "Direct link to Bug Fixes")
 
 * detailed response object documentation ([85fefc2](https://github.com/kublade/kublade/commit/85fefc254bce4aafc3fec5923565f9b4b958c085))
 
 ## [1.30.1](https://github.com/kublade/kublade/compare/v1.30.0...v1.30.1) (2025-05-23)[​](#1301-2025-05-23 "Direct link to 1301-2025-05-23")
 
-### Bug Fixes[​](#bug-fixes-28 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-30 "Direct link to Bug Fixes")
 
 * uncomment project deletion call ([360bf6b](https://github.com/kublade/kublade/commit/360bf6bf96c655c7a36873326c2acb8f9744a633))
 
@@ -314,7 +326,7 @@ All notable changes to this project will be documented in this file.
 
 * api response error serialization ([c0ac558](https://github.com/kublade/kublade/commit/c0ac5581c03467cb0e78d58fb0fd9a0d68f271c8))
 
-### Bug Fixes[​](#bug-fixes-29 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-31 "Direct link to Bug Fixes")
 
 * add missing pagination parameter to documentation ([744a0cd](https://github.com/kublade/kublade/commit/744a0cde03fc9cc88ddbd7e683176c31a313e8e4))
 * add missing request bodies to documentation ([8100a06](https://github.com/kublade/kublade/commit/8100a06f632e1c80f43a3c3ac451dd294f237664))
@@ -323,7 +335,7 @@ All notable changes to this project will be documented in this file.
 
 ## [1.29.1](https://github.com/kublade/kublade/compare/v1.29.0...v1.29.1) (2025-05-23)[​](#1291-2025-05-23 "Direct link to 1291-2025-05-23")
 
-### Bug Fixes[​](#bug-fixes-30 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-32 "Direct link to Bug Fixes")
 
 * dependencies md headline ([16ceb70](https://github.com/kublade/kublade/commit/16ceb7000e4031ae5c3d1309728a5602a2ada6cd))
 
@@ -333,7 +345,7 @@ All notable changes to this project will be documented in this file.
 
 * publish dependencies and changelog ([654d39e](https://github.com/kublade/kublade/commit/654d39e6c60c87666f5a3af2008f178e7343bdd9))
 
-### Bug Fixes[​](#bug-fixes-31 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-33 "Direct link to Bug Fixes")
 
 * add github token to workflow ([0a14083](https://github.com/kublade/kublade/commit/0a14083e382a0d5ed28a32eebb292946e61056de))
 * add github token to workflow ([01acdd5](https://github.com/kublade/kublade/commit/01acdd52778781e1b4516e2c694cd6310bd20b45))
@@ -350,13 +362,13 @@ All notable changes to this project will be documented in this file.
 
 ## [1.28.2](https://github.com/kublade/kublade/compare/v1.28.1...v1.28.2) (2025-05-22)[​](#1282-2025-05-22 "Direct link to 1282-2025-05-22")
 
-### Bug Fixes[​](#bug-fixes-32 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-34 "Direct link to Bug Fixes")
 
 * documentation repository remote deployment ([5a9e70c](https://github.com/kublade/kublade/commit/5a9e70c44da4cfed8c989cee1b49d63938d7e49b))
 
 ## [1.28.1](https://github.com/kublade/kublade/compare/v1.28.0...v1.28.1) (2025-05-22)[​](#1281-2025-05-22 "Direct link to 1281-2025-05-22")
 
-### Bug Fixes[​](#bug-fixes-33 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-35 "Direct link to Bug Fixes")
 
 * api response status field ([42590ab](https://github.com/kublade/kublade/commit/42590ab98aeef5996f422ef6d9955ac69117e017))
 
@@ -368,13 +380,13 @@ All notable changes to this project will be documented in this file.
 
 ## [1.27.2](https://github.com/kublade/kublade/compare/v1.27.1...v1.27.2) (2025-05-20)[​](#1272-2025-05-20 "Direct link to 1272-2025-05-20")
 
-### Bug Fixes[​](#bug-fixes-34 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-36 "Direct link to Bug Fixes")
 
 * network policy routes and permissions ([23de84d](https://github.com/kublade/kublade/commit/23de84d81b6cd3a0269299b0cc67990e9f2861b1))
 
 ## [1.27.1](https://github.com/kublade/kublade/compare/v1.27.0...v1.27.1) (2025-05-20)[​](#1271-2025-05-20 "Direct link to 1271-2025-05-20")
 
-### Bug Fixes[​](#bug-fixes-35 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-37 "Direct link to Bug Fixes")
 
 * darkmode colors ([6c6250d](https://github.com/kublade/kublade/commit/6c6250d35d88161603b9af67c941cdbe59caaae0))
 
@@ -386,7 +398,7 @@ All notable changes to this project will be documented in this file.
 
 ## [1.26.1](https://github.com/kublade/kublade/compare/v1.26.0...v1.26.1) (2025-05-19)[​](#1261-2025-05-19 "Direct link to 1261-2025-05-19")
 
-### Bug Fixes[​](#bug-fixes-36 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-38 "Direct link to Bug Fixes")
 
 * permission subentity filters ([28ca335](https://github.com/kublade/kublade/commit/28ca33516fc0f1858708161213de618f8726701a))
 
@@ -411,7 +423,7 @@ All notable changes to this project will be documented in this file.
 
 ## [1.23.1](https://github.com/kublade/kublade/compare/v1.23.0...v1.23.1) (2025-05-09)[​](#1231-2025-05-09 "Direct link to 1231-2025-05-09")
 
-### Bug Fixes[​](#bug-fixes-37 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-39 "Direct link to Bug Fixes")
 
 * handle empty settings sections ([#52](https://github.com/kublade/kublade/issues/52)) ([86bec2f](https://github.com/kublade/kublade/commit/86bec2fd4023a761531072604a98f603bedb3b5b))
 
@@ -449,7 +461,7 @@ All notable changes to this project will be documented in this file.
 
 ## [1.18.1](https://github.com/kublade/kublade/compare/v1.18.0...v1.18.1) (2025-05-04)[​](#1181-2025-05-04 "Direct link to 1181-2025-05-04")
 
-### Bug Fixes[​](#bug-fixes-38 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-40 "Direct link to Bug Fixes")
 
 * data encryption on deployment update ([0180ca5](https://github.com/kublade/kublade/commit/0180ca59dbbb41e2188db8d0a82850a3b47c3a4a))
 
@@ -467,7 +479,7 @@ All notable changes to this project will be documented in this file.
 
 ## [1.16.1](https://github.com/kublade/kublade/compare/v1.16.0...v1.16.1) (2025-05-04)[​](#1161-2025-05-04 "Direct link to 1161-2025-05-04")
 
-### Bug Fixes[​](#bug-fixes-39 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-41 "Direct link to Bug Fixes")
 
 * network policy management ([9497439](https://github.com/kublade/kublade/commit/9497439697300366f2a5f4357dba49116cde1afc))
 
@@ -491,13 +503,13 @@ All notable changes to this project will be documented in this file.
 
 ## [1.13.2](https://github.com/kublade/kublade/compare/v1.13.1...v1.13.2) (2025-05-03)[​](#1132-2025-05-03 "Direct link to 1132-2025-05-03")
 
-### Bug Fixes[​](#bug-fixes-40 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-42 "Direct link to Bug Fixes")
 
 * duplicate data encryption ([a15b153](https://github.com/kublade/kublade/commit/a15b1534f3bbcbe83f63b083c3680c8f54e965ea))
 
 ## [1.13.1](https://github.com/kublade/kublade/compare/v1.13.0...v1.13.1) (2025-05-03)[​](#1131-2025-05-03 "Direct link to 1131-2025-05-03")
 
-### Bug Fixes[​](#bug-fixes-41 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-43 "Direct link to Bug Fixes")
 
 * deployment data encryption ([9f28ec1](https://github.com/kublade/kublade/commit/9f28ec1a1c27ee154dfc43e8419e5ceb4efc784a))
 
@@ -509,7 +521,7 @@ All notable changes to this project will be documented in this file.
 
 ## [1.12.1](https://github.com/kublade/kublade/compare/v1.12.0...v1.12.1) (2025-05-03)[​](#1121-2025-05-03 "Direct link to 1121-2025-05-03")
 
-### Bug Fixes[​](#bug-fixes-42 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-44 "Direct link to Bug Fixes")
 
 * field list empty notice ([442bdff](https://github.com/kublade/kublade/commit/442bdff40315dec88bde3f08dc78c145ad4e7590))
 
@@ -540,13 +552,13 @@ All notable changes to this project will be documented in this file.
 
 ## [1.8.2](https://github.com/kublade/kublade/compare/v1.8.1...v1.8.2) (2025-05-01)[​](#182-2025-05-01 "Direct link to 182-2025-05-01")
 
-### Bug Fixes[​](#bug-fixes-43 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-45 "Direct link to Bug Fixes")
 
 * cluster limit monitoring ([deff640](https://github.com/kublade/kublade/commit/deff64032401a5de7b32ec87246f47e0957b23ce))
 
 ## [1.8.1](https://github.com/kublade/kublade/compare/v1.8.0...v1.8.1) (2025-05-01)[​](#181-2025-05-01 "Direct link to 181-2025-05-01")
 
-### Bug Fixes[​](#bug-fixes-44 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-46 "Direct link to Bug Fixes")
 
 * helper return data conversions ([64d8db6](https://github.com/kublade/kublade/commit/64d8db6b409fd58e5ecde8e5ab077580af1b0ff7))
 
@@ -558,7 +570,7 @@ All notable changes to this project will be documented in this file.
 
 ## [1.7.1](https://github.com/kublade/kublade/compare/v1.7.0...v1.7.1) (2025-05-01)[​](#171-2025-05-01 "Direct link to 171-2025-05-01")
 
-### Bug Fixes[​](#bug-fixes-45 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-47 "Direct link to Bug Fixes")
 
 * remove non-existent job reference ([9e370ce](https://github.com/kublade/kublade/commit/9e370cef7084015cc88bccb864ddf9dd82ceef00))
 
@@ -570,7 +582,7 @@ All notable changes to this project will be documented in this file.
 
 ## [1.6.1](https://github.com/kublade/kublade/compare/v1.6.0...v1.6.1) (2025-04-28)[​](#161-2025-04-28 "Direct link to 161-2025-04-28")
 
-### Bug Fixes[​](#bug-fixes-46 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-48 "Direct link to Bug Fixes")
 
 * mode switch ([9e90821](https://github.com/kublade/kublade/commit/9e9082186b87ee4994c03758f4e556e539638c2c))
 
@@ -588,19 +600,19 @@ All notable changes to this project will be documented in this file.
 
 ## [1.5.3](https://github.com/kublade/kublade/compare/v1.5.2...v1.5.3) (2025-04-25)[​](#153-2025-04-25 "Direct link to 153-2025-04-25")
 
-### Bug Fixes[​](#bug-fixes-47 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-49 "Direct link to Bug Fixes")
 
 * helper response types ([35cac4c](https://github.com/kublade/kublade/commit/35cac4ca23e674cab5ad0ae5ce6b3a7ed5a13870))
 
 ## [1.5.2](https://github.com/kublade/kublade/compare/v1.5.1...v1.5.2) (2025-04-25)[​](#152-2025-04-25 "Direct link to 152-2025-04-25")
 
-### Bug Fixes[​](#bug-fixes-48 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-50 "Direct link to Bug Fixes")
 
 * k8s cluster connection opening ([cd6ea90](https://github.com/kublade/kublade/commit/cd6ea901fb531276a4eb51a7d555b9bc256a885c))
 
 ## [1.5.1](https://github.com/kublade/kublade/compare/v1.5.0...v1.5.1) (2025-04-25)[​](#151-2025-04-25 "Direct link to 151-2025-04-25")
 
-### Bug Fixes[​](#bug-fixes-49 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-51 "Direct link to Bug Fixes")
 
 * kubernetes helpers multicluster support ([6135e25](https://github.com/kublade/kublade/commit/6135e2522f151a007fdb790da452ba1fdacab1f0))
 
@@ -612,13 +624,13 @@ All notable changes to this project will be documented in this file.
 
 ## [1.4.2](https://github.com/kublade/kublade/compare/v1.4.1...v1.4.2) (2025-04-24)[​](#142-2025-04-24 "Direct link to 142-2025-04-24")
 
-### Bug Fixes[​](#bug-fixes-50 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-52 "Direct link to Bug Fixes")
 
 * form field grouping ([7504aed](https://github.com/kublade/kublade/commit/7504aed46eeb89e1d19294e411261768bf2812ff))
 
 ## [1.4.1](https://github.com/kublade/kublade/compare/v1.4.0...v1.4.1) (2025-04-24)[​](#141-2025-04-24 "Direct link to 141-2025-04-24")
 
-### Bug Fixes[​](#bug-fixes-51 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-53 "Direct link to Bug Fixes")
 
 * disabled input background ([556d65f](https://github.com/kublade/kublade/commit/556d65f0aa47a3e0dfaa688ccda797f182fab4a0))
 
@@ -664,7 +676,7 @@ All notable changes to this project will be documented in this file.
 * template management ([934fedb](https://github.com/kublade/kublade/commit/934fedb3f5e5401fd789233b090c5abfebbfd860))
 * template models ([e7af466](https://github.com/kublade/kublade/commit/e7af46697af25fc87fe33ebca3e01b08ac0bc65e))
 
-### Bug Fixes[​](#bug-fixes-52 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-54 "Direct link to Bug Fixes")
 
 * project existence check ([5315e3a](https://github.com/kublade/kublade/commit/5315e3a9c1f0ba1124c0deadb3d492694a0146ed))
 * user invitation process ([343e452](https://github.com/kublade/kublade/commit/343e452456934d5b180aa5f8d43922a337010afe))
